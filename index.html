@@ -1,0 +1,4089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bùi Quang Huy: International Business Economics student at FTU, interested in logistics and marketing</title>
+  <meta name="description" content="Bùi Quang Huy: International Business Economics student at FTU, interested in logistics and marketing">
+  <meta name="theme-color" content="#3B4D3C">
+  <meta property="og:title" content="PLAY MY WORLD — Bùi Quang Huy (Quang Tom) Portfolio">
+  <meta property="og:description" content="A little green, a lot of ideas, data, and intuition. FTU K63 · International Business Economics.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & THEME SETUP
+       Colors:
+       Moss: #3B4D3C (20%)
+       Newsprint: #F4F1EA (Background)
+       Rust: #C85A32 (10% CTAs & tags)
+       Charcoal: #222222 (Text)
+       Cream: #FFF9F4 (Cards - 70% Cream/Charcoal)
+       Pastels (Stickers/Highlights only): Blush #FFD6E8, Butter #FFE66D, Sky #8ED8FF
+       ========================================================================== */
+    :root {
+      --color-moss: #3B4D3C;
+      --color-moss-light: #526B54;
+      --color-moss-dark: #273528;
+      --color-moss-subtle: #E8EDE8;
+      
+      --color-newsprint: #F4F1EA;
+      --color-newsprint-dark: #E8E3D7;
+      
+      --color-rust: #C85A32;
+      --color-rust-hover: #B24E29;
+      --color-rust-light: #F9EBE6;
+      
+      --color-charcoal: #222222;
+      --color-charcoal-muted: #555555;
+      --color-charcoal-light: #777777;
+      
+      --color-cream: #FFF9F4;
+      --color-cream-card: #FFFFFF;
+      --color-card-border: #E5DFD4;
+      
+      --color-blush: #FFD6E8;
+      --color-butter: #FFE66D;
+      --color-sky: #8ED8FF;
+      --color-tape: rgba(235, 222, 190, 0.75);
+
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-arcade: 'Press Start 2P', monospace;
+      --font-hand: 'Caveat', cursive, sans-serif;
+
+      --shadow-sm: 0 2px 4px rgba(34, 34, 34, 0.05);
+      --shadow-card: 0 4px 14px rgba(34, 34, 34, 0.08), 0 1px 3px rgba(34, 34, 34, 0.04);
+      --shadow-card-hover: 0 12px 28px rgba(34, 34, 34, 0.12), 0 3px 8px rgba(34, 34, 34, 0.06);
+      --shadow-zine: 4px 5px 0px #222222;
+      --shadow-zine-sm: 2px 3px 0px #222222;
+      --shadow-zine-rust: 3px 4px 0px #C85A32;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+
+      --transition-smooth: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+      --nav-height: 72px;
+    }
+
+    /* Dark Mode Theme */
+    [data-theme="dark"] {
+      --color-moss: #769E79;
+      --color-moss-light: #8EB891;
+      --color-moss-dark: #1F2E21;
+      --color-moss-subtle: #243526;
+
+      --color-newsprint: #161917;
+      --color-newsprint-dark: #1F2320;
+
+      --color-rust: #DE6E43;
+      --color-rust-hover: #E8835C;
+      --color-rust-light: #3D2218;
+
+      --color-charcoal: #EFECE6;
+      --color-charcoal-muted: #B3AEA5;
+      --color-charcoal-light: #8E8A83;
+
+      --color-cream: #1F2420;
+      --color-cream-card: #252B26;
+      --color-card-border: #353D37;
+
+      --color-blush: #592B3E;
+      --color-butter: #564816;
+      --color-sky: #1F3F54;
+      --color-tape: rgba(70, 64, 52, 0.7);
+
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+      --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.35);
+      --shadow-card-hover: 0 12px 28px rgba(0, 0, 0, 0.45);
+      --shadow-zine: 4px 5px 0px #0D0F0E;
+      --shadow-zine-sm: 2px 3px 0px #0D0F0E;
+      --shadow-zine-rust: 3px 4px 0px #DE6E43;
+    }
+
+    /* ==========================================================================
+       BASE & RESET
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--color-newsprint);
+      color: var(--color-charcoal);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      overflow-x: hidden;
+      position: relative;
+      background-image: 
+        radial-gradient(circle, rgba(59, 77, 60, 0.04) 1px, transparent 1px);
+      background-size: 24px 24px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Accessible focus rings */
+    :focus-visible {
+      outline: 3px solid var(--color-rust);
+      outline-offset: 3px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* Halftone subtle border styling */
+    .halftone-accent {
+      background-image: radial-gradient(#3B4D3C 12%, transparent 12%);
+      background-size: 8px 8px;
+      opacity: 0.15;
+    }
+
+    /* Washi tape decorative strip */
+    .washi-tape {
+      position: absolute;
+      height: 24px;
+      background-color: var(--color-tape);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      z-index: 3;
+      pointer-events: none;
+      backdrop-filter: blur(1px);
+      border-left: 2px dashed rgba(180, 160, 130, 0.4);
+      border-right: 2px dashed rgba(180, 160, 130, 0.4);
+    }
+
+    /* Issue Folio header badge */
+    .issue-folio {
+      font-family: var(--font-arcade);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-charcoal-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .issue-folio span.bullet {
+      color: var(--color-rust);
+    }
+
+    /* ==========================================================================
+       PROGRESS BAR, XP TOAST & HUD
+       ========================================================================== */
+    .hud-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      background: rgba(244, 241, 234, 0.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 100;
+      border-bottom: 2px solid var(--color-card-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+    [data-theme="dark"] .hud-header {
+      background: rgba(22, 25, 23, 0.94);
+    }
+
+    /* Scroll progress track */
+    .scroll-progress-container {
+      width: 100%;
+      height: 5px;
+      background: rgba(59, 77, 60, 0.1);
+      position: relative;
+    }
+
+    .scroll-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--color-moss), var(--color-rust));
+      position: relative;
+      transition: width 0.1s linear;
+    }
+
+    .scroll-heart-marker {
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      font-size: 13px;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+      animation: heartPulse 1.2s infinite ease-in-out;
+    }
+
+    @keyframes heartPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.28); }
+    }
+
+    /* Top navigation bar inside HUD */
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 1.25rem;
+      height: calc(var(--nav-height) - 5px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-arcade);
+      font-size: 0.72rem;
+      color: var(--color-charcoal);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      transition: color 0.2s;
+    }
+
+    .brand-logo:hover {
+      color: var(--color-rust);
+    }
+
+    .controller-icon {
+      width: 26px;
+      height: 26px;
+      fill: var(--color-rust);
+      filter: drop-shadow(1px 1px 0px var(--color-charcoal));
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--color-charcoal);
+      text-transform: uppercase;
+      position: relative;
+      padding: 4px 6px;
+      transition: var(--transition-smooth);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--color-rust);
+      transition: all 0.25s ease;
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-rust);
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 80%;
+    }
+
+    /* HUD Stats Widget */
+    .hud-stats-widget {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .checkpoint-badge {
+      font-family: var(--font-arcade);
+      font-size: 0.62rem;
+      background: var(--color-cream);
+      border: 1.5px solid var(--color-charcoal);
+      padding: 5px 9px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-zine-sm);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .xp-counter-badge {
+      font-family: var(--font-arcade);
+      font-size: 0.62rem;
+      background: var(--color-butter);
+      color: #222222;
+      border: 1.5px solid #222222;
+      padding: 5px 9px;
+      border-radius: var(--radius-sm);
+      box-shadow: 2px 2px 0px #222222;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    /* Quick Action Buttons in Nav */
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--color-charcoal);
+      background: var(--color-cream);
+      color: var(--color-charcoal);
+      box-shadow: var(--shadow-zine-sm);
+      transition: var(--transition-smooth);
+    }
+
+    .icon-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 2px 4px 0px var(--color-charcoal);
+      background: var(--color-blush);
+    }
+
+    /* Floating XP Toast */
+    .xp-toast-container {
+      position: fixed;
+      top: 84px;
+      right: 24px;
+      z-index: 1000;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .xp-toast {
+      font-family: var(--font-arcade);
+      font-size: 0.75rem;
+      background: var(--color-rust);
+      color: #FFFFFF;
+      padding: 8px 14px;
+      border: 2px solid #222222;
+      box-shadow: 3px 3px 0px #222222;
+      border-radius: var(--radius-sm);
+      animation: floatUpFade 2s forwards ease-out;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @keyframes floatUpFade {
+      0% { opacity: 0; transform: translateY(12px) scale(0.9); }
+      15% { opacity: 1; transform: translateY(0) scale(1.05); }
+      80% { opacity: 1; transform: translateY(-10px) scale(1); }
+      100% { opacity: 0; transform: translateY(-24px); }
+    }
+
+    /* Mobile Hamburger Menu */
+    .mobile-menu-btn {
+      display: none;
+      width: 38px;
+      height: 38px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      border: 1.5px solid var(--color-charcoal);
+      background: var(--color-cream);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-zine-sm);
+    }
+
+    .mobile-menu-btn span {
+      width: 20px;
+      height: 2px;
+      background: var(--color-charcoal);
+      transition: var(--transition-smooth);
+    }
+
+    .mobile-nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-height);
+      left: 0;
+      width: 100%;
+      background: var(--color-cream);
+      border-bottom: 3px solid var(--color-charcoal);
+      padding: 1.5rem;
+      z-index: 99;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .mobile-nav-drawer.open {
+      display: block;
+      animation: slideDown 0.25s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-nav-links .nav-link {
+      font-size: 1rem;
+      display: block;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* ==========================================================================
+       LAYOUT & TYPOGRAPHY UTILITIES
+       ========================================================================== */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-wrapper {
+      padding: 5.5rem 0;
+      position: relative;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .section-tag {
+      font-family: var(--font-arcade);
+      font-size: 0.68rem;
+      color: var(--color-rust);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 0.6rem;
+      background: var(--color-rust-light);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-rust);
+    }
+
+    [data-theme="dark"] .section-tag {
+      background: rgba(222, 110, 67, 0.2);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.85rem);
+      font-weight: 700;
+      color: var(--color-charcoal);
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--color-moss);
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--color-charcoal-muted);
+      font-weight: 400;
+    }
+
+    /* Zine Tape on Cards */
+    .tape-top-center {
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-1.5deg);
+      width: 70px;
+    }
+
+    .tape-top-left {
+      top: -10px;
+      left: 14px;
+      transform: rotate(-3.5deg);
+      width: 65px;
+    }
+
+    .tape-top-right {
+      top: -10px;
+      right: 14px;
+      transform: rotate(3deg);
+      width: 65px;
+    }
+
+    /* Margin notes */
+    .margin-note {
+      font-family: var(--font-hand);
+      font-size: 1.35rem;
+      color: var(--color-moss);
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    [data-theme="dark"] .margin-note {
+      color: var(--color-moss-light);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: var(--radius-md);
+      transition: var(--transition-smooth);
+      position: relative;
+      font-size: 0.95rem;
+    }
+
+    .btn-rust {
+      background: var(--color-rust);
+      color: #FFFFFF;
+      border: 2px solid #222222;
+      box-shadow: var(--shadow-zine);
+      font-family: var(--font-arcade);
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-rust:hover {
+      background: var(--color-rust-hover);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 7px 0px #222222;
+    }
+
+    .btn-rust:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px #222222;
+    }
+
+    .btn-secondary {
+      background: var(--color-cream);
+      color: var(--color-charcoal);
+      border: 2px solid var(--color-charcoal);
+      box-shadow: var(--shadow-zine);
+      font-weight: 600;
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-newsprint-dark);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 7px 0px var(--color-charcoal);
+    }
+
+    .btn-secondary:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px var(--color-charcoal);
+    }
+
+    /* Stickers */
+    .sticker {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      border: 1.5px solid #222222;
+      box-shadow: 2px 2px 0px #222222;
+      color: #222222;
+    }
+
+    .sticker-blush { background: var(--color-blush); }
+    .sticker-butter { background: var(--color-butter); }
+    .sticker-sky { background: var(--color-sky); }
+    .sticker-moss { background: var(--color-moss-subtle); color: var(--color-moss-dark); }
+
+    /* ==========================================================================
+       SECTION 0: START SCREEN (HERO)
+       ========================================================================== */
+    .hero-section {
+      padding-top: calc(var(--nav-height) + 2.5rem);
+      padding-bottom: 5rem;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .player-ready-badge {
+      font-family: var(--font-arcade);
+      font-size: 0.72rem;
+      background: var(--color-moss);
+      color: #FFFFFF;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-zine-sm);
+      border: 1.5px solid #222222;
+      margin-bottom: 1.25rem;
+    }
+
+    .blinking-dot {
+      width: 8px;
+      height: 8px;
+      background: #73EC8B;
+      border-radius: 50%;
+      animation: blink 1s infinite alternate;
+    }
+
+    @keyframes blink {
+      from { opacity: 0.2; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1.1); }
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 900;
+      color: var(--color-charcoal);
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-tagline-bar {
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--color-charcoal);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .word-cycle-container {
+      display: inline-flex;
+      align-items: center;
+      background: var(--color-cream);
+      border: 2px solid var(--color-charcoal);
+      border-radius: var(--radius-sm);
+      padding: 2px 10px;
+      box-shadow: 2px 2px 0px var(--color-charcoal);
+      font-weight: 700;
+      color: var(--color-rust);
+      min-width: 125px;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      height: 34px;
+    }
+
+    .cycle-word {
+      position: absolute;
+      transition: transform 0.35s ease, opacity 0.35s ease;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .cycle-word.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .highlight-green {
+      background: #E2EFE3;
+      color: var(--color-moss);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      border-bottom: 2px solid var(--color-moss);
+    }
+    [data-theme="dark"] .highlight-green {
+      background: #253827;
+      color: #92C997;
+    }
+
+    .highlight-blue {
+      background: #E1F3FE;
+      color: #12639E;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      border-bottom: 2px solid #12639E;
+    }
+    [data-theme="dark"] .highlight-blue {
+      background: #173347;
+      color: var(--color-sky);
+    }
+
+    .hero-bio {
+      font-size: 1.05rem;
+      color: var(--color-charcoal-muted);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+      max-width: 580px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      align-items: center;
+      margin-bottom: 2.25rem;
+    }
+
+    /* Info Strip */
+    .info-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      background: var(--color-cream);
+      border: 1.5px dashed var(--color-card-border);
+      border-radius: var(--radius-md);
+      font-size: 0.82rem;
+      color: var(--color-charcoal-muted);
+      max-width: 620px;
+    }
+
+    .info-strip-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+      color: var(--color-charcoal);
+    }
+
+    /* Idle Easter Egg Bubble */
+    .idle-speech-bubble {
+      position: absolute;
+      top: -30px;
+      right: 10px;
+      background: var(--color-butter);
+      color: #222222;
+      font-family: var(--font-arcade);
+      font-size: 0.65rem;
+      padding: 7px 12px;
+      border: 2px solid #222222;
+      border-radius: var(--radius-sm);
+      box-shadow: 3px 3px 0px #222222;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px) scale(0.9);
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 10;
+    }
+
+    .idle-speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 20px;
+      border-width: 8px 8px 0;
+      border-style: solid;
+      border-color: #222222 transparent;
+      display: block;
+      width: 0;
+    }
+
+    .idle-speech-bubble.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Hero Visual Card / Arcade Frame */
+    .hero-visual-card {
+      position: relative;
+      background: var(--color-cream);
+      border: 2.5px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-zine);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      transform: rotate(1deg);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-visual-card:hover {
+      transform: rotate(0deg) translateY(-4px);
+    }
+
+    .arcade-screen-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px dashed var(--color-card-border);
+      padding-bottom: 10px;
+    }
+
+    .arcade-screen-header .screen-title {
+      font-family: var(--font-arcade);
+      font-size: 0.68rem;
+      color: var(--color-moss);
+    }
+
+    .arcade-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .arcade-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1.5px solid #222222;
+    }
+    .arcade-dots span:nth-child(1) { background: #FF6B6B; }
+    .arcade-dots span:nth-child(2) { background: #FFE66D; }
+    .arcade-dots span:nth-child(3) { background: #73EC8B; }
+
+    /* Character Vector Showcase */
+    .character-stage {
+      height: 250px;
+      background: radial-gradient(circle at center, rgba(59, 77, 60, 0.08) 0%, transparent 70%);
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--color-card-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .character-avatar-svg {
+      width: 170px;
+      height: 170px;
+      filter: drop-shadow(0 8px 12px rgba(0,0,0,0.15));
+      animation: gentleFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes gentleFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    .screen-footer-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .stat-pill {
+      background: var(--color-newsprint);
+      border: 1.5px solid var(--color-card-border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 0.78rem;
+    }
+
+    .stat-pill strong {
+      display: block;
+      font-size: 0.65rem;
+      font-family: var(--font-arcade);
+      color: var(--color-moss);
+      margin-bottom: 2px;
+    }
+
+    /* ==========================================================================
+       SECTION 1: CHALLENGE 01 — CHARACTER SELECT
+       ========================================================================== */
+    .character-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.25fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* Polaroid Card */
+    .polaroid-frame {
+      position: relative;
+      background: #FFFFFF;
+      padding: 18px 18px 38px 18px;
+      border: 2px solid #222222;
+      border-radius: 4px;
+      box-shadow: var(--shadow-zine);
+      transform: rotate(-2.5deg);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    [data-theme="dark"] .polaroid-frame {
+      background: #232724;
+      border-color: #3B423C;
+    }
+
+    .star-sticker {
+      position: absolute;
+      z-index: 5;
+      font-size: 1.35rem;
+      pointer-events: none;
+      filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.15));
+      animation: gentleFloat 3s infinite ease-in-out;
+    }
+
+    .star-top-right {
+      top: -12px;
+      right: -8px;
+      transform: rotate(14deg);
+    }
+
+    .star-bottom-left {
+      bottom: 24px;
+      left: -10px;
+      transform: rotate(-12deg);
+    }
+
+    .polaroid-frame:hover {
+      transform: rotate(0deg) scale(1.02);
+      box-shadow: 6px 8px 0px #222222;
+    }
+
+    .polaroid-photo {
+      width: 100%;
+      height: 330px;
+      background: linear-gradient(135deg, #E6E2D8 0%, #D4CFBF 100%);
+      border: 1.5px solid #222222;
+      border-radius: 2px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    [data-theme="dark"] .polaroid-photo {
+      background: linear-gradient(135deg, #2A302B 0%, #1A1F1B 100%);
+    }
+
+    /* Ink stamp */
+    .mission-stamp {
+      position: absolute;
+      bottom: 20px;
+      right: 14px;
+      border: 3px double #C85A32;
+      color: #C85A32;
+      padding: 6px 12px;
+      font-family: var(--font-arcade);
+      font-size: 0.72rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      transform: rotate(-12deg);
+      letter-spacing: 0.08em;
+      border-radius: 4px;
+      opacity: 0.92;
+      pointer-events: none;
+      box-shadow: inset 0 0 4px rgba(200, 90, 50, 0.2);
+    }
+
+    .polaroid-caption {
+      margin-top: 16px;
+      font-family: var(--font-hand);
+      font-size: 1.45rem;
+      color: var(--color-charcoal);
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    /* RPG Stat Panel */
+    .rpg-stat-panel {
+      background: var(--color-cream);
+      border: 2px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-zine);
+      position: relative;
+    }
+
+    .stat-panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px dashed var(--color-card-border);
+      padding-bottom: 1rem;
+    }
+
+    .stat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      align-items: baseline;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .stat-label {
+      font-family: var(--font-arcade);
+      font-size: 0.68rem;
+      color: var(--color-moss);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .stat-value {
+      font-weight: 500;
+      color: var(--color-charcoal);
+    }
+
+    .stat-value.quirky {
+      color: var(--color-rust);
+      font-style: italic;
+    }
+
+    /* Personality Tags Flip Cards */
+    .personality-section-title {
+      font-family: var(--font-arcade);
+      font-size: 0.7rem;
+      color: var(--color-charcoal-muted);
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+    }
+
+    .personality-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      height: 94px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner,
+    .flip-card.flipped .flip-card-inner,
+    .flip-card:focus-visible .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--color-charcoal);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: var(--shadow-zine-sm);
+    }
+
+    .flip-card-front {
+      background: var(--color-newsprint);
+      color: var(--color-charcoal);
+    }
+
+    .flip-tag-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .flip-tag-hint {
+      font-size: 0.65rem;
+      color: var(--color-charcoal-muted);
+      margin-top: 4px;
+      font-family: var(--font-arcade);
+    }
+
+    .flip-card-back {
+      background: var(--color-blush);
+      color: #222222;
+      transform: rotateY(180deg);
+      font-size: 0.78rem;
+      line-height: 1.35;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    .flip-card:nth-child(2) .flip-card-back { background: var(--color-butter); }
+    .flip-card:nth-child(3) .flip-card-back { background: var(--color-sky); }
+    .flip-card:nth-child(4) .flip-card-back { background: var(--color-moss-subtle); color: var(--color-moss-dark); }
+
+    /* Recruiter Summary Box (Prominent & 10-Second Ready) */
+    .recruiter-summary-box {
+      background: var(--color-newsprint);
+      border: 2px solid var(--color-moss);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      position: relative;
+      box-shadow: 3px 3px 0px var(--color-moss);
+    }
+
+    .recruiter-badge {
+      position: absolute;
+      top: -12px;
+      left: 18px;
+      background: var(--color-moss);
+      color: #FFFFFF;
+      font-family: var(--font-arcade);
+      font-size: 0.6rem;
+      padding: 3px 9px;
+      border-radius: var(--radius-sm);
+      letter-spacing: 0.05em;
+    }
+
+    .recruiter-text {
+      font-size: 0.95rem;
+      color: var(--color-charcoal);
+      line-height: 1.6;
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .recruiter-quick-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .recruiter-action-btn {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-charcoal);
+      background: var(--color-cream);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-smooth);
+    }
+
+    .recruiter-action-btn:hover {
+      background: var(--color-butter);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       SECTION 2: CHALLENGE 02 — EDUCATION
+       ========================================================================== */
+    .education-map-wrapper {
+      background: var(--color-cream);
+      border: 2.5px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-zine);
+      position: relative;
+      margin-bottom: 3rem;
+    }
+
+    .timeline-track-visual {
+      position: relative;
+      padding: 1rem 0;
+    }
+
+    .timeline-road-line {
+      position: absolute;
+      left: 28px;
+      top: 24px;
+      bottom: 24px;
+      width: 4px;
+      background: repeating-linear-gradient(
+        to bottom,
+        var(--color-moss) 0px,
+        var(--color-moss) 12px,
+        transparent 12px,
+        transparent 20px
+      );
+    }
+
+    .checkpoint-milestone-node {
+      position: relative;
+      padding-left: 68px;
+      margin-bottom: 2.5rem;
+    }
+
+    .checkpoint-milestone-node:last-child {
+      margin-bottom: 0;
+    }
+
+    .milestone-pin {
+      position: absolute;
+      left: 10px;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-butter);
+      border: 2px solid var(--color-charcoal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      box-shadow: 2px 2px 0px var(--color-charcoal);
+      z-index: 2;
+    }
+
+    .milestone-pin.active {
+      background: var(--color-rust);
+      color: #FFFFFF;
+    }
+
+    .milestone-content h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+      margin-bottom: 0.35rem;
+    }
+
+    .milestone-tag {
+      font-family: var(--font-arcade);
+      font-size: 0.65rem;
+      color: var(--color-moss);
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    .milestone-desc {
+      font-size: 0.95rem;
+      color: var(--color-charcoal-muted);
+      line-height: 1.6;
+    }
+
+    /* Knowledge Collected Grid */
+    .knowledge-section-title {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .knowledge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .knowledge-card {
+      background: var(--color-cream);
+      border: 2px solid var(--color-charcoal);
+      border-radius: var(--radius-md);
+      padding: 1.3rem;
+      box-shadow: var(--shadow-zine-sm);
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .knowledge-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 4px 6px 0px var(--color-charcoal);
+      border-color: var(--color-moss);
+    }
+
+    .knowledge-card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .knowledge-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+      margin-bottom: 0.4rem;
+    }
+
+    .knowledge-card p {
+      font-size: 0.85rem;
+      color: var(--color-charcoal-muted);
+      line-height: 1.45;
+    }
+
+    /* Badges Bar */
+    .badges-collection-box {
+      background: var(--color-newsprint);
+      border: 2px solid var(--color-card-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .badges-heading {
+      font-family: var(--font-arcade);
+      font-size: 0.68rem;
+      color: var(--color-moss);
+      text-transform: uppercase;
+      margin-right: 0.5rem;
+    }
+
+    .achievement-pill {
+      background: var(--color-cream);
+      border: 1.5px solid var(--color-charcoal);
+      border-radius: var(--radius-full);
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 2px 2px 0px var(--color-charcoal);
+      transition: transform 0.2s;
+    }
+
+    .achievement-pill:hover {
+      transform: scale(1.05);
+      background: var(--color-butter);
+    }
+
+    /* ==========================================================================
+       SECTION 3: CHALLENGE 03 — INVENTORY (SKILLS)
+       ========================================================================== */
+    .inventory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .inventory-card {
+      background: var(--color-cream);
+      border: 2px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-zine-sm);
+      position: relative;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .inventory-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 5px 8px 0px var(--color-charcoal);
+    }
+
+    /* Rarity borders and tags */
+    .rarity-legendary { border-color: #D9822B; box-shadow: 3px 3px 0px #D9822B; }
+    .rarity-epic { border-color: #8A4DA8; box-shadow: 3px 3px 0px #8A4DA8; }
+    .rarity-rare { border-color: #2F7DB3; box-shadow: 3px 3px 0px #2F7DB3; }
+    .rarity-uncommon { border-color: #3B7A57; box-shadow: 3px 3px 0px #3B7A57; }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .item-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      background: var(--color-newsprint);
+      border: 1.5px solid var(--color-charcoal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      box-shadow: 2px 2px 0px var(--color-charcoal);
+    }
+
+    .rarity-badge {
+      font-family: var(--font-arcade);
+      font-size: 0.58rem;
+      padding: 4px 8px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .badge-legendary { background: #FFE66D; color: #6D3D00; border: 1px solid #D9822B; }
+    .badge-epic { background: #EED7FF; color: #4F1D6A; border: 1px solid #8A4DA8; }
+    .badge-rare { background: #D2EDFF; color: #0C4E78; border: 1px solid #2F7DB3; }
+    .badge-uncommon { background: #D7F2DF; color: #154D2B; border: 1px solid #3B7A57; }
+
+    .item-name {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+      margin-bottom: 0.4rem;
+    }
+
+    .item-description {
+      font-size: 0.88rem;
+      color: var(--color-charcoal-muted);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+
+    .item-flavor-footer {
+      border-top: 1.5px dashed var(--color-card-border);
+      padding-top: 0.75rem;
+      font-size: 0.75rem;
+      color: var(--color-moss);
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ==========================================================================
+       SECTION 4: CHALLENGE 04 — QUEST LOG (EXPERIENCE)
+       ========================================================================== */
+    .quest-log-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .quest-card {
+      background: var(--color-cream);
+      border: 2.5px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-zine);
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+
+    .quest-card:hover {
+      box-shadow: 6px 8px 0px var(--color-charcoal);
+      transform: translateY(-2px);
+    }
+
+    .quest-type-badge {
+      font-family: var(--font-arcade);
+      font-size: 0.68rem;
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 1rem;
+      border: 1.5px solid #222222;
+    }
+
+    .badge-main-quest {
+      background: var(--color-rust);
+      color: #FFFFFF;
+    }
+
+    .badge-side-mission {
+      background: var(--color-moss);
+      color: #FFFFFF;
+    }
+
+    .badge-locked-quest {
+      background: var(--color-charcoal-muted);
+      color: #FFFFFF;
+    }
+
+    .quest-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .quest-role {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+    }
+
+    .quest-company {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-rust);
+      margin-bottom: 0.75rem;
+    }
+
+    .quest-narrative {
+      font-size: 0.98rem;
+      color: var(--color-charcoal-muted);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .quest-meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* Locked Quest Card */
+    .quest-card.locked {
+      border: 2px dashed var(--color-charcoal-muted);
+      background: rgba(244, 241, 234, 0.6);
+      opacity: 0.9;
+    }
+
+    [data-theme="dark"] .quest-card.locked {
+      background: rgba(31, 36, 32, 0.6);
+    }
+
+    /* ==========================================================================
+       SECTION 5: CHALLENGE 05 — BOSS LEVELS (PROJECTS)
+       ========================================================================== */
+    .boss-container {
+      position: relative;
+    }
+
+    .boss-card {
+      background: var(--color-cream);
+      border: 3px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-zine);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .boss-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px dashed var(--color-card-border);
+      padding-bottom: 1.25rem;
+    }
+
+    .boss-title-box h3 {
+      font-family: var(--font-arcade);
+      font-size: 0.95rem;
+      color: var(--color-rust);
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+
+    .boss-hp-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hp-label {
+      font-family: var(--font-arcade);
+      font-size: 0.65rem;
+      color: var(--color-charcoal);
+    }
+
+    .hp-bar-outer {
+      width: 140px;
+      height: 16px;
+      background: #E8E3D7;
+      border: 2px solid #222222;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hp-bar-fill {
+      width: 15%;
+      height: 100%;
+      background: linear-gradient(90deg, #FF6B6B, #FFE66D);
+      animation: pulseLoading 1.5s infinite alternate;
+    }
+
+    @keyframes pulseLoading {
+      0% { width: 10%; }
+      100% { width: 25%; }
+    }
+
+    .boss-matrix {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.75rem;
+    }
+
+    .boss-field-cell {
+      background: var(--color-newsprint);
+      border: 1.5px solid var(--color-card-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+
+    .boss-field-label {
+      font-family: var(--font-arcade);
+      font-size: 0.65rem;
+      color: var(--color-moss);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .boss-field-value {
+      font-size: 0.9rem;
+      color: var(--color-charcoal);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SECTION 6: CHALLENGE 06 — SIDE QUESTS & ARCHIVE
+       ========================================================================== */
+    .sidequests-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    /* Art Archive Polaroids */
+    .polaroid-scatter-zone {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 2rem;
+      padding: 1.5rem 0.5rem;
+    }
+
+    .scatter-polaroid {
+      background: #FFFFFF;
+      padding: 12px 12px 28px 12px;
+      border: 2px solid #222222;
+      border-radius: 4px;
+      box-shadow: var(--shadow-zine-sm);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      cursor: pointer;
+      position: relative;
+    }
+    [data-theme="dark"] .scatter-polaroid {
+      background: #232724;
+      border-color: #384039;
+    }
+
+    .scatter-polaroid:nth-child(1) { transform: rotate(-3deg); }
+    .scatter-polaroid:nth-child(2) { transform: rotate(2.5deg); }
+    .scatter-polaroid:nth-child(3) { transform: rotate(-1.5deg); }
+    .scatter-polaroid:nth-child(4) { transform: rotate(3deg); }
+    .scatter-polaroid:nth-child(5) { transform: rotate(-2deg); }
+
+    .scatter-polaroid:hover {
+      transform: rotate(0deg) scale(1.08) translateY(-8px);
+      box-shadow: 6px 12px 0px #222222;
+      z-index: 5;
+    }
+
+    .scatter-image-placeholder {
+      width: 100%;
+      height: 180px;
+      background: var(--color-newsprint);
+      border: 1px solid #222222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+    }
+    [data-theme="dark"] .scatter-image-placeholder {
+      background: #181D19;
+    }
+
+    .scatter-title {
+      margin-top: 10px;
+      font-family: var(--font-hand);
+      font-size: 1.25rem;
+      color: var(--color-charcoal);
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    /* LENORMAND WIDGET */
+    .lenormand-deck-widget {
+      background: var(--color-cream);
+      border: 2.5px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-zine);
+      position: relative;
+    }
+
+    .widget-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .widget-title {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+    }
+
+    .lenormand-input-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .card-question-input {
+      flex: 1;
+      min-width: 260px;
+      padding: 12px 18px;
+      border: 2px solid var(--color-charcoal);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      background: var(--color-newsprint);
+      color: var(--color-charcoal);
+      transition: var(--transition-smooth);
+    }
+
+    .card-question-input:focus {
+      border-color: var(--color-rust);
+      background: #FFFFFF;
+    }
+    [data-theme="dark"] .card-question-input:focus {
+      background: #252B26;
+    }
+
+    .draw-modes {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* Cards Playing Field */
+    .cards-spread-arena {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.75rem;
+      min-height: 290px;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+
+    /* 3D Flip Card Container */
+    .tarot-card-slot {
+      width: 170px;
+      height: 250px;
+      perspective: 1000px;
+    }
+
+    .tarot-card-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .tarot-card-inner.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--color-charcoal);
+      box-shadow: var(--shadow-zine-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px;
+    }
+
+    .card-back-pattern {
+      background: #3B4D3C;
+      color: #FFE66D;
+      background-image: 
+        radial-gradient(circle, #526B54 2px, transparent 2px),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 8px, transparent 8px, transparent 16px);
+      background-size: 16px 16px, 32px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card-back-icon {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    .card-front-display {
+      background: #FFF9F4;
+      color: #222222;
+      transform: rotateY(180deg);
+      text-align: center;
+    }
+    [data-theme="dark"] .card-front-display {
+      background: #252B26;
+      color: #EFECE6;
+    }
+
+    .card-number-badge {
+      font-family: var(--font-arcade);
+      font-size: 0.65rem;
+      color: var(--color-rust);
+    }
+
+    .card-illustration-box {
+      font-size: 3rem;
+      margin: 8px 0;
+    }
+
+    .card-heading-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+    }
+
+    .spread-slot-label {
+      font-family: var(--font-arcade);
+      font-size: 0.6rem;
+      color: var(--color-moss);
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+
+    /* Reading text output */
+    .card-reading-output {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background: var(--color-newsprint);
+      border: 2px dashed var(--color-card-border);
+      border-radius: var(--radius-md);
+      font-size: 1.02rem;
+      color: var(--color-charcoal);
+      line-height: 1.6;
+      min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .disclaimer-note {
+      font-size: 0.78rem;
+      color: var(--color-charcoal-muted);
+      margin-top: 1rem;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* Shoe Easter Egg Sticker in Corner */
+    .shoe-easter-egg-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 80;
+      background: var(--color-cream);
+      border: 2px solid var(--color-charcoal);
+      border-radius: 50%;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-zine);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .shoe-easter-egg-btn:hover {
+      transform: scale(1.15) rotate(-8deg);
+      background: var(--color-blush);
+      box-shadow: 4px 6px 0px var(--color-charcoal);
+    }
+
+    /* Runner Easter Egg Animation Track */
+    .runner-stage-track {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 48px;
+      pointer-events: none;
+      z-index: 75;
+      overflow: hidden;
+    }
+
+    .pixel-runner-sprite {
+      position: absolute;
+      bottom: 2px;
+      left: -60px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.2));
+    }
+
+    .pixel-runner-sprite.running {
+      animation: sprintAcross 8s linear forwards;
+    }
+
+    @keyframes sprintAcross {
+      0% { left: -60px; transform: scaleX(1); }
+      100% { left: 105vw; transform: scaleX(1); }
+    }
+
+    /* ==========================================================================
+       SECTION 7: FINAL LEVEL: CONTACT
+       ========================================================================== */
+    .contact-layout-box {
+      background: var(--color-cream);
+      border: 3px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-zine);
+      position: relative;
+    }
+
+    .contact-main-quote {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+      font-style: italic;
+      font-weight: 900;
+      color: var(--color-moss);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .contact-subtitle-line {
+      font-size: 1.15rem;
+      color: var(--color-charcoal);
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 3rem auto;
+      font-weight: 500;
+    }
+
+    .contact-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-item-card {
+      background: var(--color-newsprint);
+      border: 2px solid var(--color-charcoal);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      box-shadow: var(--shadow-zine-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .contact-item-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 4px 6px 0px var(--color-charcoal);
+      border-color: var(--color-rust);
+    }
+
+    .contact-card-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-icon-bubble {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--color-cream);
+      border: 1.5px solid var(--color-charcoal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+
+    .contact-type-title {
+      font-family: var(--font-arcade);
+      font-size: 0.65rem;
+      color: var(--color-moss);
+      margin-bottom: 2px;
+    }
+
+    .contact-handle-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+      word-break: break-all;
+    }
+
+    .contact-action-link {
+      align-self: flex-start;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-rust);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .contact-action-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Quick Message Postcard Form */
+    .quick-message-box {
+      background: var(--color-cream);
+      border: 2px dashed var(--color-charcoal);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .quick-message-title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .form-inputs-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--color-charcoal);
+      border-radius: var(--radius-sm);
+      background: var(--color-newsprint);
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      color: var(--color-charcoal);
+    }
+
+    .form-control:focus {
+      border-color: var(--color-rust);
+      outline: none;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 90px;
+      margin-bottom: 1rem;
+    }
+
+    /* FOOTER & ACHIEVEMENTS */
+    .footer-status-zone {
+      border-top: 2px solid var(--color-card-border);
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.75rem;
+      text-align: center;
+    }
+
+    .level-cleared-banner {
+      font-family: var(--font-arcade);
+      font-size: 1.15rem;
+      color: var(--color-moss);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      background: var(--color-moss-subtle);
+      border: 2px solid var(--color-moss);
+      border-radius: var(--radius-sm);
+    }
+    [data-theme="dark"] .level-cleared-banner {
+      color: #92C997;
+      background: #203523;
+    }
+
+    .achievements-board {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .achievement-card-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--color-charcoal);
+      background: var(--color-newsprint);
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: 2px 2px 0px var(--color-charcoal);
+      transition: all 0.25s ease;
+    }
+
+    .achievement-card-status.unlocked {
+      background: var(--color-butter);
+      border-color: #222222;
+      color: #222222;
+    }
+
+    .achievement-check {
+      font-size: 1rem;
+    }
+
+    /* Modal for CV */
+    .cv-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(34, 34, 34, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .cv-modal-backdrop.open {
+      display: flex;
+    }
+
+    .cv-modal-card {
+      background: var(--color-cream);
+      border: 3px solid var(--color-charcoal);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      max-width: 650px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 8px 12px 0px #222222;
+      position: relative;
+    }
+
+    .cv-modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-family: var(--font-arcade);
+      font-size: 0.85rem;
+      background: var(--color-rust);
+      color: #FFFFFF;
+      border: 1.5px solid #222222;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE & ACCESSIBILITY (prefers-reduced-motion)
+       ========================================================================== */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .character-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+      .polaroid-frame {
+        max-width: 380px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      :root {
+        --nav-height: 64px;
+      }
+      .section-wrapper {
+        padding: 4rem 0;
+      }
+      .hero-headline {
+        font-size: 2.25rem;
+      }
+      .stat-row {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+      }
+      .form-inputs-row {
+        grid-template-columns: 1fr;
+      }
+      .hud-stats-widget .checkpoint-badge {
+        display: none;
+      }
+    }
+
+    /* Scroll Reveal & Interactive Micro-Interactions */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-item.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal-item {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .scatter-polaroid, .hero-visual-card, .polaroid-frame, .inventory-card, .knowledge-card, .boss-card {
+        transform: none !important;
+      }
+      .pixel-runner-sprite {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HUD & FIXED STICKY NAVIGATION
+       ========================================================================== -->
+  <header class="hud-header" role="banner">
+    <!-- Scroll Progress Bar with Heart Marker -->
+    <div class="scroll-progress-container" aria-hidden="true">
+      <div class="scroll-progress-bar" id="scrollProgressBar">
+        <span class="scroll-heart-marker" id="scrollHeart">❤️</span>
+      </div>
+    </div>
+
+    <!-- Navigation Bar Inner -->
+    <div class="nav-inner">
+      <a href="#hero" class="brand-logo" aria-label="Quang Tom Portfolio Home">
+        <!-- Gamepad Controller SVG -->
+        <svg class="controller-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 6H17C19.7614 6 22 8.23858 22 11V16C22 17.6569 20.6569 19 19 19C17.6865 19 16.5744 18.1565 16.1687 16.9696L15.3424 14.5424C15.1278 13.9103 14.5323 13.4839 13.8633 13.4839H10.1367C9.46767 13.4839 8.87222 13.9103 8.65761 14.5424L7.83126 16.9696C7.42564 18.1565 6.31351 19 5 19C3.34315 19 2 17.6569 2 16V11C2 8.23858 4.23858 6 7 6ZM6 10V11H5V12H6V13H7V12H8V11H7V10H6ZM17.5 10C17.2239 10 17 10.2239 17 10.5C17 10.7761 17.2239 11 17.5 11C17.7761 11 18 10.7761 18 10.5C18 10.2239 17.7761 10 17.5 10ZM19 11.5C18.7239 11.5 18.5 11.7239 18.5 12C18.5 12.2761 18.7239 12.5 19 12.5C19.2761 12.5 19.5 12.2761 19.5 12C19.5 11.7239 19.2761 11.5 19 11.5Z"/>
+        </svg>
+        <span>Quang Tom's Portfolio</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#education" class="nav-link">EDUCATION</a></li>
+          <li><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li><a href="#quests" class="nav-link">QUESTS</a></li>
+          <li><a href="#sidequests" class="nav-link">SIDE QUESTS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- HUD Counter & Mode Toggles -->
+      <div class="hud-stats-widget">
+        <!-- Checkpoint Counter -->
+        <div class="checkpoint-badge" title="Checkpoints Cleared">
+          <span>🚩</span>
+          <span id="checkpointCounter">CHECKPOINTS 0/7</span>
+        </div>
+
+        <!-- Live XP Counter -->
+        <div class="xp-counter-badge" id="xpCounterBadge" title="Current Experience Points">
+          <span>⭐</span>
+          <span id="xpScoreDisplay">50 XP</span>
+        </div>
+
+        <div class="nav-controls">
+          <!-- Audio Toggle (Bleep/Chime FX) -->
+          <button class="icon-btn" id="audioToggleBtn" title="Toggle 8-bit sound effects" aria-label="Toggle 8-bit sound effects">
+            <span id="audioIcon">🔊</span>
+          </button>
+
+          <!-- Dark Mode Toggle -->
+          <button class="icon-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+            <span id="themeIcon">🌙</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="nav-link mobile-link">CHALLENGE 01: ABOUT</a></li>
+        <li><a href="#education" class="nav-link mobile-link">CHALLENGE 02: EDUCATION</a></li>
+        <li><a href="#skills" class="nav-link mobile-link">CHALLENGE 03: SKILLS</a></li>
+        <li><a href="#quests" class="nav-link mobile-link">CHALLENGE 04: QUEST LOG</a></li>
+        <li><a href="#boss" class="nav-link mobile-link">CHALLENGE 05: BOSS LEVELS</a></li>
+        <li><a href="#sidequests" class="nav-link mobile-link">CHALLENGE 06: SIDE QUESTS</a></li>
+        <li><a href="#contact" class="nav-link mobile-link">FINAL LEVEL: CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- XP Toast Container for Notifications -->
+  <div class="xp-toast-container" id="xpToastContainer" aria-live="polite"></div>
+
+  <main>
+    <!-- ==========================================================================
+         START SCREEN (HERO / ARCADE INTRO)
+         ========================================================================== -->
+    <section class="hero-section" id="hero" data-checkpoint-index="0">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column Content -->
+          <div class="hero-content">
+            <!-- Issue Folio -->
+            <div class="issue-folio" style="margin-bottom: 0.75rem;">
+              <span>PLAY MY WORLD</span>
+              <span class="bullet">✦</span>
+              <span>ISSUE No.01</span>
+              <span class="bullet">✦</span>
+              <span>FTU K63</span>
+              <span class="bullet">✦</span>
+              <span>2026</span>
+            </div>
+
+            <!-- Player Status Badge -->
+            <div class="player-ready-badge">
+              <span class="blinking-dot"></span>
+              <span>PLAYER 01 READY</span>
+            </div>
+
+            <h1 class="hero-headline">
+              Hi, I'm Quang Tom <br>
+              <span style="font-weight: 500; font-size: 0.85em; color: var(--color-charcoal-muted);">(Bùi Quang Huy).</span>
+            </h1>
+
+            <!-- Animated Word Cycling Bar -->
+            <div class="hero-tagline-bar">
+              <span>A little <strong class="highlight-green">green</strong>, a lot of</span>
+              <span class="word-cycle-container" id="wordCycleBox" aria-label="data, ideas, intuition cycling">
+                <span class="cycle-word active">data</span>
+                <span class="cycle-word">ideas</span>
+                <span class="cycle-word">intuition</span>
+              </span>
+              <span>and <strong class="highlight-blue">blue</strong>.</span>
+            </div>
+
+            <p class="hero-bio">
+              Third-year International Business Economics student at Foreign Trade University, Hanoi. Exploring international trade, logistics, and marketing, with a sketchbook and a Lenormand deck nearby.
+            </p>
+
+            <!-- Buttons & Idle Easter Egg Bubble -->
+            <div style="position: relative; display: inline-block;">
+              <div class="idle-speech-bubble" id="idleBubble">
+                psst… press start.
+              </div>
+
+              <div class="hero-buttons">
+                <a href="#about" class="btn btn-rust" id="pressStartBtn">
+                  <span>PRESS START ▶</span>
+                </a>
+                <button class="btn btn-secondary" id="viewCvBtn">
+                  <span>VIEW MY CV 📄</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Info Strip -->
+            <div class="info-strip">
+              <span class="info-strip-pill">🏫 FTU</span>
+              <span>·</span>
+              <span class="info-strip-pill">🎓 K63</span>
+              <span>·</span>
+              <span class="info-strip-pill">🗣️ IELTS</span>
+              <span>·</span>
+              <span class="info-strip-pill">📦 Sales & Customer Services Intern</span>
+              <span>·</span>
+              <span class="sticker sticker-butter">✨ Open to internships</span>
+            </div>
+          </div>
+
+          <!-- Right Column Arcade Display Card -->
+          <div class="hero-visual-card">
+            <div class="washi-tape tape-top-center"></div>
+            
+            <div class="arcade-screen-header">
+              <span class="screen-title">ARCADE ARCHIVE // HERO SELECT</span>
+              <div class="arcade-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <!-- Character Silhouette / Vector Avatar -->
+            <div class="character-stage">
+              <svg class="character-avatar-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Quang Tom vector character illustration">
+                <!-- Soft Glow circle -->
+                <circle cx="100" cy="100" r="88" fill="#F4F1EA" stroke="#222222" stroke-width="2.5" stroke-dasharray="4 4"/>
+                <!-- Character Body -->
+                <rect x="65" y="128" width="70" height="60" rx="18" fill="#3B4D3C" stroke="#222222" stroke-width="2.5"/>
+                <!-- Shirt Collar -->
+                <polygon points="85,128 100,146 115,128 100,136" fill="#FFF9F4" stroke="#222222" stroke-width="2"/>
+                <polygon points="100,136 100,170" stroke="#C85A32" stroke-width="2.5"/>
+                <!-- Head -->
+                <circle cx="100" cy="85" r="42" fill="#FFE2D1" stroke="#222222" stroke-width="2.5"/>
+                <!-- Hair (Playful messy crop) -->
+                <path d="M60 82C60 55 75 42 100 42C122 42 140 55 140 82C130 76 122 75 110 74C96 74 85 78 74 84C68 83 62 82 60 82Z" fill="#222222"/>
+                <!-- Glasses -->
+                <rect x="76" y="76" width="20" height="15" rx="3" fill="#8ED8FF" fill-opacity="0.3" stroke="#222222" stroke-width="2.5"/>
+                <rect x="104" y="76" width="20" height="15" rx="3" fill="#8ED8FF" fill-opacity="0.3" stroke="#222222" stroke-width="2.5"/>
+                <line x1="96" y1="83" x2="104" y2="83" stroke="#222222" stroke-width="2.5"/>
+                <!-- Eyes behind glasses -->
+                <circle cx="86" cy="83" r="2.5" fill="#222222"/>
+                <circle cx="114" cy="83" r="2.5" fill="#222222"/>
+                <!-- Deadpan calm gentle smile -->
+                <path d="M93 105C97 107 103 107 107 105" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                <!-- Cute cheek blush -->
+                <circle cx="74" cy="94" r="5" fill="#FFB4C8" fill-opacity="0.5"/>
+                <circle cx="126" cy="94" r="5" fill="#FFB4C8" fill-opacity="0.5"/>
+                <!-- Floating sparkle stars -->
+                <path d="M150 48L153 54L159 57L153 60L150 66L147 60L141 57L147 54Z" fill="#FFE66D" stroke="#222222" stroke-width="1.5"/>
+                <path d="M48 115L50 120L55 122L50 124L48 129L46 124L41 122L46 120Z" fill="#FFD6E8" stroke="#222222" stroke-width="1.5"/>
+              </svg>
+            </div>
+
+            <div class="screen-footer-stats">
+              <div class="stat-pill">
+                <strong>ACADEMIC CLASS</strong>
+                <span>FTU K63 · IBE</span>
+              </div>
+              <div class="stat-pill">
+                <strong>SPECIALTY</strong>
+                <span>Trade & Logistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHALLENGE 01: MEET THE MAIN CHARACTER (CHARACTER SELECT)
+         ========================================================================== -->
+    <section class="section-wrapper" id="about" data-checkpoint-index="1">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">CHALLENGE 01</span>
+          <h2 class="section-title">Meet the <em>Main Character</em></h2>
+          <p class="section-subtitle">CHALLENGE 01: Meet the Main Character</p>
+        </header>
+
+        <div class="character-grid">
+          <!-- Polaroid Photo Card -->
+          <div class="polaroid-wrapper">
+            <div class="polaroid-frame">
+              <div class="washi-tape tape-top-left"></div>
+              <!-- Star Stickers -->
+              <div class="star-sticker star-top-right">⭐</div>
+              <div class="star-sticker star-bottom-left">✨</div>
+              
+              <div class="polaroid-photo">
+                <!-- If local user photo exists, display it with seamless vector placeholder fallback -->
+                <img src="eb37df94-b183-4b28-b354-a769a6ef3c01.jpg" alt="Bùi Quang Huy Photo" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.style.display='none'; document.getElementById('polaroidVectorSvg').style.display='block';">
+
+                <!-- Vector Portrait & Visual Placeholder -->
+                <div id="polaroidVectorSvg" style="display: none; width: 100%; height: 100%;">
+                  <svg viewBox="0 0 240 240" width="100%" height="100%" fill="none" style="padding: 15px;">
+                    <!-- Sketchbook in hand -->
+                    <rect x="50" y="150" width="60" height="75" rx="4" fill="#C85A32" stroke="#222222" stroke-width="2"/>
+                    <line x1="56" y1="160" x2="104" y2="160" stroke="#FFF9F4" stroke-width="2"/>
+                    <line x1="56" y1="172" x2="94" y2="172" stroke="#FFF9F4" stroke-width="2"/>
+                    <line x1="56" y1="184" x2="98" y2="184" stroke="#FFF9F4" stroke-width="2"/>
+                    <!-- Pencil tucked -->
+                    <line x1="102" y1="140" x2="114" y2="180" stroke="#FFE66D" stroke-width="4" stroke-linecap="round"/>
+                    <!-- Character Bust -->
+                    <circle cx="120" cy="95" r="46" fill="#FFE2D1" stroke="#222222" stroke-width="2.5"/>
+                    <path d="M78 90C78 60 92 48 120 48C145 48 162 60 162 90C152 83 140 82 130 82C116 82 102 86 92 92C85 91 80 90 78 90Z" fill="#222222"/>
+                    <!-- Glasses -->
+                    <rect x="94" y="85" width="22" height="17" rx="3" fill="#8ED8FF" fill-opacity="0.35" stroke="#222222" stroke-width="2"/>
+                    <rect x="124" y="85" width="22" height="17" rx="3" fill="#8ED8FF" fill-opacity="0.35" stroke="#222222" stroke-width="2"/>
+                    <line x1="116" y1="93" x2="124" y2="93" stroke="#222222" stroke-width="2"/>
+                    <circle cx="105" cy="93" r="2.5" fill="#222222"/>
+                    <circle cx="135" cy="93" r="2.5" fill="#222222"/>
+                    <path d="M112 118C117 121 123 121 128 118" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+
+                <!-- Mission Active Ink Stamp -->
+                <div class="mission-stamp">
+                  ✦ MISSION ACTIVE ✦
+                </div>
+              </div>
+
+              <p class="polaroid-caption">
+                Bùi Quang Huy · Hanoi, 2026
+              </p>
+            </div>
+
+            <!-- Margin note -->
+            <div class="margin-note" style="margin-top: 1.5rem; transform: rotate(-2deg);">
+              <span>✏️</span>
+              <span>"Probably reading trade charts or a Lenormand deck."</span>
+            </div>
+          </div>
+
+          <!-- RPG Stat Panel -->
+          <div class="rpg-stat-panel">
+            <div class="stat-panel-header">
+              <span class="issue-folio">
+                <span>CHARACTER STATS // LVL 20</span>
+              </span>
+              <span class="sticker sticker-butter">PLAYER 01</span>
+            </div>
+
+            <!-- RPG-style Stat Panel (Words, not percentages!) -->
+            <div class="stat-list">
+              <div class="stat-row">
+                <span class="stat-label">NAME</span>
+                <span class="stat-value">Bùi Quang Huy (Quang Tom)</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">AGE</span>
+                <span class="stat-value">20</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">CLASS</span>
+                <span class="stat-value">Business student, Intl. Business Economics (K63), FTU</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">STATUS</span>
+                <span class="stat-value quirky">"idk, just figuring things out"</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">SUPERPOWER</span>
+                <span class="stat-value">Observant, deadpan calm; stores frustration quietly; can maybe read the future</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">FLAW</span>
+                <span class="stat-value quirky">Uncertainty… and being broke (TT)</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">CURRENT BUFF</span>
+                <span class="stat-value">Sweets (stress-powered) 🍬</span>
+              </div>
+            </div>
+
+            <!-- Interactive Flip Personality Tags -->
+            <div class="personality-section-title">
+              ✦ PERSONALITY TRAITS (CLICK / HOVER TO REVEAL EVIDENCE)
+            </div>
+            <div class="personality-grid">
+              <!-- Tag 1: Calm -->
+              <div class="flip-card" tabindex="0" role="button" aria-label="Calm trait card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="flip-tag-name">🍵 Calm</span>
+                    <span class="flip-tag-hint">FLIP ↻</span>
+                  </div>
+                  <div class="flip-card-back">
+                    Maintains a poker face even when five deadlines converge at 23:59.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tag 2: Observant -->
+              <div class="flip-card" tabindex="0" role="button" aria-label="Observant trait card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="flip-tag-name">👁️ Observant</span>
+                    <span class="flip-tag-hint">FLIP ↻</span>
+                  </div>
+                  <div class="flip-card-back">
+                    Notices the micro-expressions during client calls and tiny formatting quirks.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tag 3: Creative -->
+              <div class="flip-card" tabindex="0" role="button" aria-label="Creative trait card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="flip-tag-name">🎨 Creative</span>
+                    <span class="flip-tag-hint">FLIP ↻</span>
+                  </div>
+                  <div class="flip-card-back">
+                    Can't look at a blank margin without scribbling a comic or flow diagram.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tag 4: Slightly Chaotic -->
+              <div class="flip-card" tabindex="0" role="button" aria-label="Slightly Chaotic trait card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <span class="flip-tag-name">🎲 Slightly Chaotic</span>
+                    <span class="flip-tag-hint">FLIP ↻</span>
+                  </div>
+                  <div class="flip-card-back">
+                    Spontaneously does a 3-card spread to decide lunch, but keeps spreadsheets pristine.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recruiter Summary Box (10-second rule!) -->
+            <div class="recruiter-summary-box">
+              <span class="recruiter-badge">RECRUITER 10-SEC BRIEFING</span>
+              <p class="recruiter-text">
+                Third-year IBE student at FTU with a Sales & Customer Services internship at C.A.S Logistics, interested in logistics, international trade, and marketing, looking for internship opportunities.
+              </p>
+              <div class="recruiter-quick-actions">
+                <a href="mailto:quanghuy362006@gmail.com" class="recruiter-action-btn">
+                  <span>✉️ Email Huy Directly</span>
+                </a>
+                <button class="recruiter-action-btn" id="copyEmailBtn">
+                  <span>📋 Copy Email</span>
+                </button>
+                <a href="#quests" class="recruiter-action-btn">
+                  <span>📜 View Work Experience</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHALLENGE 02: LEVEL UP MY BRAIN (EDUCATION)
+         ========================================================================== -->
+    <section class="section-wrapper" id="education" data-checkpoint-index="2">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">CHALLENGE 02</span>
+          <h2 class="section-title">Level Up <em>My Brain</em></h2>
+          <p class="section-subtitle">CHALLENGE 02: Level Up My Brain (Education)</p>
+        </header>
+
+        <!-- Map-style Timeline with Flags -->
+        <div class="education-map-wrapper">
+          <div class="washi-tape tape-top-right"></div>
+          
+          <div class="timeline-track-visual">
+            <div class="timeline-road-line" aria-hidden="true"></div>
+
+            <!-- Checkpoint 01: High School -->
+            <div class="checkpoint-milestone-node">
+              <div class="milestone-pin" aria-hidden="true">🚩</div>
+              <div class="milestone-content">
+                <span class="milestone-tag">CHECKPOINT 01 // FOUNDATION</span>
+                <h3>Chuyên Hùng Vương High School, Phú Thọ</h3>
+                <p class="milestone-desc">
+                  Rigorous academic environment fostering self-discipline, critical inquiry, and analytical reasoning before heading to university.
+                </p>
+              </div>
+            </div>
+
+            <!-- Checkpoint 02: FTU -->
+            <div class="checkpoint-milestone-node">
+              <div class="milestone-pin active" aria-hidden="true">
+                <img src="FTU_logo_2020.svg.webp" alt="FTU Logo" style="width: 26px; height: 26px; object-fit: contain; border-radius: 50%;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                <span style="display: none;">🎓</span>
+              </div>
+              <div class="milestone-content">
+                <span class="milestone-tag">CHECKPOINT 02 // CURRENT MAIN QUEST</span>
+                <h3>Foreign Trade University (FTU), Hanoi</h3>
+                <div style="font-weight: 600; color: var(--color-moss); margin-bottom: 6px;">
+                  K63 · International Business Economics (IBE)
+                </div>
+                <p class="milestone-desc">
+                  Third-year undergraduate exploring the mechanics of global markets, supply chains, international trade policy, and consumer behavior.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Knowledge Collected Cards -->
+        <h3 class="knowledge-section-title">
+          <span>🧠 Knowledge Collected</span>
+          <span class="sticker sticker-blush" style="font-size: 0.75rem;">CURRICULUM IN PRACTICE</span>
+        </h3>
+
+        <div class="knowledge-grid">
+          <div class="knowledge-card">
+            <div class="knowledge-card-icon">🌐</div>
+            <h4>International Trade</h4>
+            <p>How and why goods cross borders.</p>
+          </div>
+
+          <div class="knowledge-card">
+            <div class="knowledge-card-icon">🚢</div>
+            <h4>Logistics</h4>
+            <p>What moves, how, and what it costs.</p>
+          </div>
+
+          <div class="knowledge-card">
+            <div class="knowledge-card-icon">📑</div>
+            <h4>Customs</h4>
+            <p>The rules and documents behind the border.</p>
+          </div>
+
+          <div class="knowledge-card">
+            <div class="knowledge-card-icon">🎯</div>
+            <h4>Marketing</h4>
+            <p>Why people choose anything at all.</p>
+          </div>
+
+          <div class="knowledge-card">
+            <div class="knowledge-card-icon">🧩</div>
+            <h4>International Business</h4>
+            <p>Putting it all together.</p>
+          </div>
+        </div>
+
+        <!-- Academic Badges Bar -->
+        <div class="badges-collection-box">
+          <span class="badges-heading">SKILL RUNES & BADGES:</span>
+          
+          <div class="achievement-pill">
+            <span>📜</span>
+            <span>TESOL 120h (Summer 2024)</span>
+          </div>
+
+          <div class="achievement-pill">
+            <span>🗣️</span>
+            <span>Bilingual VI / EN</span>
+          </div>
+
+          <div class="achievement-pill">
+            <span>🀄</span>
+            <span>Learning Chinese (In Progress)</span>
+          </div>
+
+          <div class="achievement-pill">
+            <span>🎖️</span>
+            <span>IELTS Certified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHALLENGE 03: UNLOCK MY SKILL SET (INVENTORY)
+         ========================================================================== -->
+    <section class="section-wrapper" id="skills" data-checkpoint-index="3">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">CHALLENGE 03</span>
+          <h2 class="section-title">Unlock My <em>Skill Set</em></h2>
+          <p class="section-subtitle">CHALLENGE 03: Unlock My Skill Set (Inventory)</p>
+        </header>
+
+        <!-- Inventory Item Grid with Rarity Borders -->
+        <div class="inventory-grid">
+          <!-- Item 1: The Huge Pencil -->
+          <div class="inventory-card rarity-legendary">
+            <div class="item-header">
+              <div class="item-icon-box">✏️</div>
+              <span class="rarity-badge badge-legendary">LEGENDARY TOOL</span>
+            </div>
+            <div>
+              <h3 class="item-name">The Huge Pencil</h3>
+              <p class="item-description">
+                Sketching, rapid visual ideation, drafting concepts, and making abstract thoughts tangible on physical paper.
+              </p>
+            </div>
+            <div class="item-flavor-footer">
+              <span>✦ Effect: +25 Visual Synthesis</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Lenormand Deck -->
+          <div class="inventory-card rarity-epic">
+            <div class="item-header">
+              <div class="item-icon-box">🃏</div>
+              <span class="rarity-badge badge-epic">EPIC ARTIFACT</span>
+            </div>
+            <div>
+              <h3 class="item-name">Lenormand Deck</h3>
+              <p class="item-description">
+                Pattern reading, storytelling, and connecting seemingly disparate clues with intuition and narrative logic.
+              </p>
+            </div>
+            <div class="item-flavor-footer">
+              <span>✦ Effect: +30 Lateral Thinking</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Bilingual Scroll -->
+          <div class="inventory-card rarity-rare">
+            <div class="item-header">
+              <div class="item-icon-box">📜</div>
+              <span class="rarity-badge badge-rare">RARE CODEX</span>
+            </div>
+            <div>
+              <h3 class="item-name">Bilingual Scroll</h3>
+              <p class="item-description">
+                Fluent Vietnamese & English communication; Mandarin Chinese currently compiling in the background buffer.
+              </p>
+            </div>
+            <div class="item-flavor-footer">
+              <span>✦ Effect: Global Cross-Talk Active</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Analyst's Lens -->
+          <div class="inventory-card rarity-rare">
+            <div class="item-header">
+              <div class="item-icon-box">🔍</div>
+              <span class="rarity-badge badge-rare">RARE GEAR</span>
+            </div>
+            <div>
+              <h3 class="item-name">Analyst's Lens</h3>
+              <p class="item-description">
+                Reading markets, scrutinizing trade flows, assessing business models, and separating vanity metrics from reality.
+              </p>
+            </div>
+            <div class="item-flavor-footer">
+              <span>✦ Effect: +20 Market Acumen</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Calm Aura -->
+          <div class="inventory-card rarity-legendary">
+            <div class="item-header">
+              <div class="item-icon-box">🛡️</div>
+              <span class="rarity-badge badge-legendary">PASSIVE BUFF</span>
+            </div>
+            <div>
+              <h3 class="item-name">Calm Aura</h3>
+              <p class="item-description">
+                Steady under pressure; maintains a deadpan composure and systematic clarity when everything is chaotic.
+              </p>
+            </div>
+            <div class="item-flavor-footer">
+              <span>✦ Effect: 100% Panic Resistance</span>
+            </div>
+          </div>
+
+          <!-- Item 6: Detail Radar -->
+          <div class="inventory-card rarity-uncommon">
+            <div class="item-header">
+              <div class="item-icon-box">📡</div>
+              <span class="rarity-badge badge-uncommon">UNCOMMON SENSOR</span>
+            </div>
+            <div>
+              <h3 class="item-name">Detail Radar</h3>
+              <p class="item-description">
+                Notices what others miss: typographic anomalies, document discrepancies, subtle shifts in tone, and micro-details.
+              </p>
+            </div>
+            <div class="item-flavor-footer">
+              <span>✦ Effect: +15 Accuracy Inspection</span>
+            </div>
+          </div>
+
+          <!-- Item 7: Customer Ears -->
+          <div class="inventory-card rarity-epic">
+            <div class="item-header">
+              <div class="item-icon-box">🎧</div>
+              <span class="rarity-badge badge-epic">EMPATHY RELIC</span>
+            </div>
+            <div>
+              <h3 class="item-name">Customer Ears</h3>
+              <p class="item-description">
+                Listening first, honed from frontline sales and service interactions. Translating real user frustration into solutions.
+              </p>
+            </div>
+            <div class="item-flavor-footer">
+              <span>✦ Effect: High Empathy Alignment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHALLENGE 04: QUEST LOG (EXPERIENCE)
+         ========================================================================== -->
+    <section class="section-wrapper" id="quests" data-checkpoint-index="4">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">CHALLENGE 04</span>
+          <h2 class="section-title">Quest <em>Log</em></h2>
+          <p class="section-subtitle">CHALLENGE 04: Quest Log (Experience)</p>
+        </header>
+
+        <div class="quest-log-container">
+          <!-- MAIN QUEST: C.A.S Logistics -->
+          <article class="quest-card">
+            <div class="washi-tape tape-top-left"></div>
+
+            <div class="quest-type-badge badge-main-quest">
+              <span>⚔️ MAIN QUEST COMPLETED</span>
+            </div>
+
+            <div class="quest-title-row">
+              <h3 class="quest-role">Intern, Sales & Customer Services Department</h3>
+              <span class="sticker sticker-moss">LOGISTICS INDUSTRY</span>
+            </div>
+
+            <div class="quest-company">
+              C.A.S Logistics Joint Stock Company
+            </div>
+
+            <p class="quest-narrative">
+              A first look at logistics from the customer-facing side. Experiencing freight operations, customer communications, client inquiries, and the operational coordination essential to international supply chains.
+            </p>
+
+            <div class="quest-meta-pills">
+              <span class="achievement-pill">📦 Freight Coordination</span>
+              <span class="achievement-pill">🤝 Customer Service</span>
+              <span class="achievement-pill">📑 Documentation Flow</span>
+            </div>
+          </article>
+
+          <!-- SIDE MISSION: IBE Community -->
+          <article class="quest-card">
+            <div class="quest-type-badge badge-side-mission">
+              <span>🛡️ SIDE MISSION ACTIVE</span>
+            </div>
+
+            <div class="quest-title-row">
+              <h3 class="quest-role">Member</h3>
+              <span class="sticker sticker-butter">STUDENT COMMUNITY</span>
+            </div>
+
+            <div class="quest-company">
+              International Business Economics Community, FTU
+            </div>
+
+            <p class="quest-narrative">
+              Collaborating on academic workshops, community events, peer exchanges, and expanding practical awareness of international business dynamics.
+            </p>
+
+            <div class="quest-meta-pills">
+              <span class="achievement-pill">🏛️ Academic Network</span>
+              <span class="achievement-pill">👥 Team Collaboration</span>
+            </div>
+          </article>
+
+          <!-- LOCKED CARD: NEXT QUEST -->
+          <article class="quest-card locked">
+            <div class="quest-type-badge badge-locked-quest">
+              <span>🔒 NEXT QUEST</span>
+            </div>
+
+            <div class="quest-title-row">
+              <h3 class="quest-role">Upcoming Internship / Next Adventure</h3>
+              <span class="sticker sticker-blush">LOCKED SLOT</span>
+            </div>
+
+            <div class="quest-company">
+              Open to Opportunities: Logistics, International Trade & Marketing
+            </div>
+
+            <p class="quest-narrative">
+              Ready to deploy business acumen, analytical lenses, creative problem-solving, and dedication into the next high-impact organizational role.
+            </p>
+
+            <a href="#contact" class="btn btn-rust" style="padding: 8px 16px; font-size: 0.72rem;">
+              <span>UNLOCK THIS QUEST ✦ CONTACT HUY</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHALLENGE 05: BOSS LEVELS (PROJECTS)
+         ========================================================================== -->
+    <section class="section-wrapper" id="boss" data-checkpoint-index="5">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">CHALLENGE 05</span>
+          <h2 class="section-title">Boss <em>Levels</em></h2>
+          <p class="section-subtitle">CHALLENGE 05: Boss Levels (Projects)</p>
+        </header>
+
+        <div class="boss-container">
+          <div class="boss-card">
+            <div class="washi-tape tape-top-center"></div>
+
+            <div class="boss-banner">
+              <div class="boss-title-box">
+                <span class="issue-folio">ENCOUNTER FILE // STAGE 01</span>
+                <h3>BOSS 01: Loading…</h3>
+              </div>
+
+              <div class="boss-hp-box">
+                <span class="hp-label">HP: 0 / 9999</span>
+                <div class="hp-bar-outer" title="Loading boss hp">
+                  <div class="hp-bar-fill"></div>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--color-charcoal-muted); margin-bottom: 1.5rem;">
+              Currently architecting capstones, business simulations, and strategic case competitions. The arena is setting up for encounter deployment.
+            </p>
+
+            <!-- Boss Card Matrix (Problem / My Move / Result / Tools) -->
+            <div class="boss-matrix">
+              <div class="boss-field-cell">
+                <div class="boss-field-label">1. PROBLEM</div>
+                <div class="boss-field-value">
+                  To be defined: A real-world logistics bottleneck, international market entry barrier, or brand growth riddle.
+                </div>
+              </div>
+
+              <div class="boss-field-cell">
+                <div class="boss-field-label">2. MY MOVE</div>
+                <div class="boss-field-value">
+                  Deep data analysis, structured trade frameworks, rapid sketching, empathetic customer focus, and deadpan composure under pressure.
+                </div>
+              </div>
+
+              <div class="boss-field-cell">
+                <div class="boss-field-label">3. RESULT</div>
+                <div class="boss-field-value">
+                  Loading victory stats… Clean deliverables, measurable impact, and actionable business solutions.
+                </div>
+              </div>
+
+              <div class="boss-field-cell">
+                <div class="boss-field-label">4. TOOLS</div>
+                <div class="boss-field-value">
+                  Excel, Trade Data, Python, Visual Sketches, Lenormand Deck, and relentless curiosity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHALLENGE 06: POWER-UPS & SIDE QUESTS
+         ========================================================================== -->
+    <section class="section-wrapper" id="sidequests" data-checkpoint-index="6">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">CHALLENGE 06</span>
+          <h2 class="section-title">Power-Ups & <em>Side Quests</em></h2>
+          <p class="section-subtitle">CHALLENGE 06: Power-Ups & Side Quests</p>
+        </header>
+
+        <div class="sidequests-layout">
+          <!-- 1. Art & Random Archive -->
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 1rem;">
+              <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;">
+                📸 Art & Random Archive
+              </h3>
+              <span class="margin-note">
+                "Drawings live in the margins of lecture slides..."
+              </span>
+            </div>
+
+            <!-- Tilted Polaroids Grid -->
+            <div class="polaroid-scatter-zone">
+              <!-- Item 1: Drawing -->
+              <div class="scatter-polaroid" tabindex="0" role="article" aria-label="Drawing Archive Polaroid">
+                <div class="scatter-image-placeholder">
+                  <span style="font-size: 2.2rem;">✏️</span>
+                  <span style="font-size: 0.72rem; font-family: var(--font-arcade); margin-top: 6px; color: var(--color-moss);">SKETCHBOOK</span>
+                </div>
+                <div class="scatter-title">Doodle Margins</div>
+              </div>
+
+              <!-- Item 2: Painting -->
+              <div class="scatter-polaroid" tabindex="0" role="article" aria-label="Painting Archive Polaroid">
+                <div class="scatter-image-placeholder">
+                  <img src="62bc9425-c889-4674-bad1-8c360e35c38a.jpg" alt="Art study" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div style="display: none; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                    <span style="font-size: 2.2rem;">🎨</span>
+                    <span style="font-size: 0.72rem; font-family: var(--font-arcade); margin-top: 6px; color: var(--color-rust);">GOUACHE</span>
+                  </div>
+                </div>
+                <div class="scatter-title">Color Studies</div>
+              </div>
+
+              <!-- Item 3: Photography -->
+              <div class="scatter-polaroid" tabindex="0" role="article" aria-label="Photography Archive Polaroid">
+                <div class="scatter-image-placeholder">
+                  <img src="ffa7b123-fff5-4882-b65f-c394bca65d5a.jpg" alt="Photography snapshot" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div style="display: none; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                    <span style="font-size: 2.2rem;">📷</span>
+                    <span style="font-size: 0.72rem; font-family: var(--font-arcade); margin-top: 6px; color: var(--color-charcoal);">35MM VIBE</span>
+                  </div>
+                </div>
+                <div class="scatter-title">Street Textures</div>
+              </div>
+
+              <!-- Item 4: Weird Screenshots -->
+              <div class="scatter-polaroid" tabindex="0" role="article" aria-label="Weird Screenshots Archive Polaroid">
+                <div class="scatter-image-placeholder">
+                  <span style="font-size: 2.2rem;">👾</span>
+                  <span style="font-size: 0.72rem; font-family: var(--font-arcade); margin-top: 6px; color: var(--color-moss);">SCREENSHOTS</span>
+                </div>
+                <div class="scatter-title">Curated Chaos</div>
+              </div>
+
+              <!-- Item 5: 2 AM Bookstore walks -->
+              <div class="scatter-polaroid" tabindex="0" role="article" aria-label="2 AM Bookstore Walks Polaroid">
+                <div class="scatter-image-placeholder">
+                  <span style="font-size: 2.2rem;">🌙</span>
+                  <span style="font-size: 0.72rem; font-family: var(--font-arcade); margin-top: 6px; color: #12639E;">2 AM WALKS</span>
+                </div>
+                <div class="scatter-title">Bookstore Quiet</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. "Ask the Cards" Lenormand Widget -->
+          <div class="lenormand-deck-widget">
+            <div class="washi-tape tape-top-left"></div>
+
+            <div class="widget-header">
+              <div>
+                <span class="section-tag" style="background: var(--color-butter); color: #222222; border-color: #222222;">
+                  MYSTICAL SYNTHESIS
+                </span>
+                <h3 class="widget-title">"Ask the Cards" Lenormand Widget</h3>
+              </div>
+
+              <div class="draw-modes">
+                <button class="btn btn-secondary" id="drawOneCardBtn" style="padding: 8px 16px; font-size: 0.8rem;">
+                  <span>🃏 1 Card Draw</span>
+                </button>
+                <button class="btn btn-rust" id="drawThreeCardBtn" style="padding: 8px 16px; font-size: 0.72rem;">
+                  <span>✨ 3-Card Spread</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Optional question input -->
+            <div class="lenormand-input-row">
+              <input type="text" id="lenormandQuestionInput" class="card-question-input" placeholder="Ask a question (e.g., 'Will this logistics shipment arrive on time?' or 'Should I hire Quang Tom?')..." aria-label="Question for the Lenormand cards">
+            </div>
+
+            <!-- Cards Display Arena -->
+            <div class="cards-spread-arena" id="cardsSpreadArena">
+              <!-- Default slot 1 -->
+              <div class="tarot-card-slot" id="cardSlot1">
+                <div class="tarot-card-inner" id="cardInner1">
+                  <!-- Back Face -->
+                  <div class="card-face card-back-pattern">
+                    <span class="card-back-icon">🔮</span>
+                    <span style="font-family: var(--font-arcade); font-size: 0.58rem; letter-spacing: 0.05em;">LENORMAND</span>
+                  </div>
+                  <!-- Front Face -->
+                  <div class="card-face card-front-display" id="cardFront1">
+                    <span class="card-number-badge">NO. 14</span>
+                    <div class="card-illustration-box">🦊</div>
+                    <div class="card-heading-name">The Fox</div>
+                    <span class="spread-slot-label">PRESENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reading Text Output with aria-live -->
+            <div class="card-reading-output" id="cardReadingOutput" aria-live="polite">
+              <strong>The Fox:</strong> "Someone is being clever. Check your emails twice. It may be you."
+            </div>
+
+            <p class="disclaimer-note">
+              For entertainment. The cards are not a financial advisor. (Neither am I.)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FINAL LEVEL: CONTACT
+         ========================================================================== -->
+    <section class="section-wrapper" id="contact" data-checkpoint-index="7">
+      <div class="container">
+        <header class="section-header" style="text-align: center;">
+          <span class="section-tag" style="background: var(--color-moss); color: #FFFFFF; border-color: #222222;">
+            MISSION DEPLOYMENT
+          </span>
+          <h2 class="section-title">FINAL LEVEL: <em>Contact</em></h2>
+          <p class="section-subtitle">FINAL LEVEL: Contact</p>
+        </header>
+
+        <div class="contact-layout-box">
+          <div class="washi-tape tape-top-center"></div>
+
+          <!-- Iconic Heading -->
+          <h3 class="contact-main-quote">
+            "Things will be okay!!"
+          </h3>
+
+          <p class="contact-subtitle-line">
+            Open to internship opportunities in logistics, international trade, and marketing.
+          </p>
+
+          <!-- Contact Cards Styled as Game Items -->
+          <div class="contact-cards-grid">
+            <!-- Email -->
+            <div class="contact-item-card">
+              <div class="contact-card-top">
+                <div class="contact-icon-bubble">✉️</div>
+                <div>
+                  <div class="contact-type-title">PRIMARY COMMS</div>
+                  <div class="contact-handle-name">quanghuy362006@gmail.com</div>
+                </div>
+              </div>
+              <a href="mailto:quanghuy362006@gmail.com" class="contact-action-link">
+                <span>Send Dispatch ➔</span>
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item-card">
+              <div class="contact-card-top">
+                <div class="contact-icon-bubble">💼</div>
+                <div>
+                  <div class="contact-type-title">PROFESSIONAL GUILD</div>
+                  <div class="contact-handle-name">huybui-ftu</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/huybui-ftu" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                <span>Connect on LinkedIn ➔</span>
+              </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-item-card">
+              <div class="contact-card-top">
+                <div class="contact-icon-bubble">💻</div>
+                <div>
+                  <div class="contact-type-title">CODE REPOSITORY</div>
+                  <div class="contact-handle-name">quangtom-pt</div>
+                </div>
+              </div>
+              <a href="https://github.com/quangtom-pt" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                <span>Inspect GitHub ➔</span>
+              </a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="contact-item-card">
+              <div class="contact-card-top">
+                <div class="contact-icon-bubble">📸</div>
+                <div>
+                  <div class="contact-type-title">VISUAL LOG</div>
+                  <div class="contact-handle-name">@wtmlnw</div>
+                </div>
+              </div>
+              <a href="https://www.instagram.com/wtmlnw" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                <span>Follow on Instagram ➔</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Postcard Interactive Note -->
+          <div class="quick-message-box">
+            <h4 class="quick-message-title">
+              <span>📬 Send an Instant Greeting</span>
+              <span class="sticker sticker-butter" style="font-size: 0.68rem;">DIRECT DISPATCH</span>
+            </h4>
+            <form id="contactQuickForm" onsubmit="handleQuickDispatch(event)">
+              <div class="form-inputs-row">
+                <input type="text" id="senderName" class="form-control" placeholder="Your Name or Company" required>
+                <input type="email" id="senderEmail" class="form-control" placeholder="Your Email Address" required>
+              </div>
+              <textarea id="senderMessage" class="form-control" placeholder="Hello Huy, we saw your portfolio and would love to talk about an internship role..." required></textarea>
+              <button type="submit" class="btn btn-rust">
+                <span>TRANSMIT DISPATCH ▶</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Footer Status Zone -->
+          <footer class="footer-status-zone">
+            <div class="level-cleared-banner">
+              <span>✦</span>
+              <span>100% — LEVEL CLEARED</span>
+              <span>✦</span>
+            </div>
+
+            <!-- Achievements Checklist Tracked Live -->
+            <div>
+              <div style="font-family: var(--font-arcade); font-size: 0.65rem; color: var(--color-charcoal-muted); margin-bottom: 0.75rem;">
+                MISSION ACHIEVEMENTS UNLOCKED:
+              </div>
+              <div class="achievements-board">
+                <div class="achievement-card-status" id="achieveShoe">
+                  <span class="achievement-check">👟</span>
+                  <span>Found the shoe</span>
+                </div>
+                <div class="achievement-card-status" id="achieveCards">
+                  <span class="achievement-check">🃏</span>
+                  <span>Drew 3 cards</span>
+                </div>
+                <div class="achievement-card-status unlocked" id="achieveEnd">
+                  <span class="achievement-check">✦</span>
+                  <span>Reached the end</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-secondary" id="playAgainBtn">
+              <span>PLAY AGAIN ↺</span>
+            </button>
+
+            <div class="issue-folio" style="margin-top: 1rem;">
+              <span>PLAY MY WORLD</span>
+              <span class="bullet">·</span>
+              <span>BÙI QUANG HUY</span>
+              <span class="bullet">·</span>
+              <span>FTU K63</span>
+              <span class="bullet">·</span>
+              <span>2026</span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       EASTER EGGS: STICKER SHOE & JOGGING RUNNER
+       ========================================================================== -->
+  <!-- Shoe Easter Egg Button -->
+  <button class="shoe-easter-egg-btn" id="shoeEasterEggBtn" title="A curious sneaker sticker... Click me!" aria-label="Find the shoe easter egg">
+    <span style="font-size: 1.8rem;">👟</span>
+  </button>
+
+  <!-- Runner Stage Track for the Jogging Easter Egg -->
+  <div class="runner-stage-track" aria-hidden="true">
+    <div class="pixel-runner-sprite" id="pixelRunnerSprite">
+      🏃‍♂️💨
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SHOE EASTER EGG MODAL
+       ========================================================================== -->
+  <div class="cv-modal-backdrop" id="shoeModal" role="dialog" aria-modal="true" aria-labelledby="shoeModalTitle">
+    <div class="cv-modal-card" style="max-width: 480px; text-align: center;">
+      <div class="washi-tape tape-top-center"></div>
+      <button class="cv-modal-close-btn" id="shoeModalCloseBtn" aria-label="Close modal">✕</button>
+      <div style="font-size: 3.8rem; margin: 0.5rem 0 0.25rem 0;">👟</div>
+      <div class="issue-folio" style="justify-content: center; margin-bottom: 0.65rem;">
+        <span>HIDDEN EASTER EGG UNLOCKED</span>
+      </div>
+      <h3 id="shoeModalTitle" style="font-family: var(--font-display); font-size: 1.65rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--color-moss);">
+        Sneaker Appreciation ✦
+      </h3>
+      <p style="font-size: 1.05rem; font-style: italic; line-height: 1.6; color: var(--color-charcoal); margin-bottom: 1.35rem; background: var(--color-newsprint); padding: 1.15rem; border-radius: var(--radius-md); border: 1.5px dashed var(--color-card-border);">
+        "Durable, unpretentious, goes everywhere, and somehow never goes out of style."
+      </p>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap;">
+        <span class="sticker sticker-butter" style="font-size: 0.8rem;">⭐ +50 XP REWARDED</span>
+        <span class="sticker sticker-blush" style="font-size: 0.8rem;">🏆 BADGE UNLOCKED</span>
+      </div>
+      <button class="btn btn-rust" id="shoeModalOkBtn" style="width: 100%;">
+        <span>COLLECT XP ✦ KEEP EXPLORING</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CV MODAL
+       ========================================================================== -->
+  <div class="cv-modal-backdrop" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+    <div class="cv-modal-card">
+      <button class="cv-modal-close-btn" id="cvModalCloseBtn" aria-label="Close CV preview">✕ CLOSE</button>
+      
+      <div class="issue-folio" style="margin-bottom: 0.5rem;">
+        <span>CURRICULUM VITAE // QUICK OVERVIEW</span>
+      </div>
+      
+      <h3 id="cvModalTitle" style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; margin-bottom: 0.25rem;">
+        Bùi Quang Huy (Quang Tom)
+      </h3>
+      <p style="font-size: 0.95rem; color: var(--color-rust); font-weight: 600; margin-bottom: 1.5rem;">
+        International Business Economics · FTU K63 · Hanoi
+      </p>
+
+      <div style="font-size: 0.92rem; line-height: 1.65; color: var(--color-charcoal); display: flex; flex-direction: column; gap: 1.25rem;">
+        <div>
+          <strong style="font-family: var(--font-arcade); font-size: 0.68rem; color: var(--color-moss);">SUMMARY</strong>
+          <p>Third-year International Business Economics student at Foreign Trade University with a completed Sales & Customer Services internship at C.A.S Logistics. Academically grounded in international trade, supply chain fundamentals, customs, and marketing. Highly observant, steady under deadline pressures, and bilingual in Vietnamese and English.</p>
+        </div>
+
+        <div>
+          <strong style="font-family: var(--font-arcade); font-size: 0.68rem; color: var(--color-moss);">EDUCATION</strong>
+          <p>• <strong>Foreign Trade University (FTU):</strong> International Business Economics (K63), 2023 – Present.<br>
+          • <strong>Chuyên Hùng Vương High School, Phú Thọ.</strong></p>
+        </div>
+
+        <div>
+          <strong style="font-family: var(--font-arcade); font-size: 0.68rem; color: var(--color-moss);">EXPERIENCE</strong>
+          <p>• <strong>C.A.S Logistics Joint Stock Company:</strong> Intern, Sales & Customer Services Department.<br>
+          • <strong>International Business Economics Community, FTU:</strong> Active Member.</p>
+        </div>
+
+        <div>
+          <strong style="font-family: var(--font-arcade); font-size: 0.68rem; color: var(--color-moss);">CERTIFICATIONS & SKILLS</strong>
+          <p>• IELTS Certified<br>
+          • TESOL 120h (Summer 2024)<br>
+          • Languages: Vietnamese (Native), English (Fluent), Chinese (In progress)<br>
+          • Skills: Market Analysis, Customer Communication, Visual Ideation, Sketching</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="mailto:quanghuy362006@gmail.com" class="btn btn-rust" style="font-size: 0.72rem;">
+          <span>EMAIL FOR FULL PDF CV ✉️</span>
+        </a>
+        <button class="btn btn-secondary" onclick="window.print()">
+          <span>PRINT / SAVE SUMMARY 🖨️</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SOUND SYNTHESIZER & SCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    /* ==========================================================================
+       ALL 36 LENORMAND CARDS DATABASE (AUTHENTIC DECK)
+       ========================================================================== */
+    const LENORMAND_DECK = [
+      { id: 1, name: "The Rider", icon: "🏇", reading: "Swift news arrives on two wheels. Don't leave people on read." },
+      { id: 2, name: "The Clover", icon: "🍀", reading: "A stroke of petty good luck. You will catch the green light and find snacks on sale." },
+      { id: 3, name: "The Ship", icon: "🚢", reading: "Distant horizons, global trade, and moving cargo. The container is finally clearing customs." },
+      { id: 4, name: "The House", icon: "🏡", reading: "Your foundation is solid. Put on comfortable socks and stay indoors tonight." },
+      { id: 5, name: "The Tree", icon: "🌳", reading: "Deep roots take time to drink water. Growth is happening even when you feel static." },
+      { id: 6, name: "The Clouds", icon: "☁️", reading: "Temporary confusion. Wait for the fog to lift before sending that risky paragraph." },
+      { id: 7, name: "The Snake", icon: "🐍", reading: "Twists, turns, and intricate complications. Watch out for tricky clauses in contracts." },
+      { id: 8, name: "The Coffin", icon: "⚰️", reading: "An ending that makes room for fresh beginnings. Close the 47 open browser tabs." },
+      { id: 9, name: "The Bouquet", icon: "💐", reading: "An unexpected compliment or aesthetic delight. Accept praise without making an awkward joke." },
+      { id: 10, name: "The Scythe", icon: "🌾", reading: "Swift decision needed. Cut out what's draining your battery without hesitation." },
+      { id: 11, name: "The Whip", icon: "⚡", reading: "Repetitive debate and inner friction. Go for a brisk walk instead of overthinking." },
+      { id: 12, name: "The Birds", icon: "🐦", reading: "Chirping gossip and frantic group chats. A lot of noise, but mostly harmless banter." },
+      { id: 13, name: "The Child", icon: "🌱", reading: "Beginner's mind, fresh curiosity, and playful experimentation. Start without fear of being bad at it." },
+      { id: 14, name: "The Fox", icon: "🦊", reading: "Someone is being clever. Check your emails twice. It may be you." },
+      { id: 15, name: "The Bear", icon: "🐻", reading: "Formidable strength and protective boundaries. Stand firm on your worth." },
+      { id: 16, name: "The Stars", icon: "⭐", reading: "Clarity, navigation, and quiet dreams. Trust the compass even on dark nights." },
+      { id: 17, name: "The Stork", icon: "🕊️", reading: "A welcome transition and change of scenery. Seasonal shifts bring fresh motivation." },
+      { id: 18, name: "The Dog", icon: "🐕", reading: "Loyal comrades and dependable friends. Someone in your corner has your back 100%." },
+      { id: 19, name: "The Tower", icon: "🏰", reading: "Institutions, campus halls, and official structures. Time to deal with administrative paperwork." },
+      { id: 20, name: "The Garden", icon: "🌷", reading: "Public gatherings, networking, and social spaces. Step out and let the world see your work." },
+      { id: 21, name: "The Mountain", icon: "⛰️", reading: "A temporary roadblock. You can't bulldoze it down, so find the scenic hiking trail around it." },
+      { id: 22, name: "The Crossroads", icon: "🛤️", reading: "Multiple viable paths ahead. There is no wrong choice, only different storylines." },
+      { id: 23, name: "The Mice", icon: "🐁", reading: "Small leaks, minor annoyances, and eroding energy. Check where your time is vanishing." },
+      { id: 24, name: "The Heart", icon: "❤️", reading: "Genuine enthusiasm and heartfelt alignment. Do what makes your inner pilot light up." },
+      { id: 25, name: "The Ring", icon: "💍", reading: "Commitment, contracts, and partnerships. Sign with confidence and honor your word." },
+      { id: 26, name: "The Book", icon: "📖", reading: "Hidden knowledge waiting to be cracked open. Read the footnotes; that's where the secrets live." },
+      { id: 27, name: "The Letter", icon: "✉️", reading: "Written correspondence, formal offers, and official dispatches. Keep an eye on your inbox." },
+      { id: 28, name: "The Man", icon: "🧍‍♂️", reading: "A pragmatic, decisive presence in your path. Lead with calm rationality." },
+      { id: 29, name: "The Woman", icon: "🧍‍♀️", reading: "Intuitive insight and empathetic intelligence. Listen to your gut feelings." },
+      { id: 30, name: "The Lily", icon: "⚜️", reading: "Maturity, quiet contentment, and seasoned composure. Wisdom doesn't need to shout." },
+      { id: 31, name: "The Sun", icon: "☀️", reading: "Radiant triumph, high energy, and clear victory. Everything falls into place seamlessly." },
+      { id: 32, name: "The Moon", icon: "🌙", reading: "Creativity, deep intuition, and evening inspiration. Best ideas appear after 11 PM." },
+      { id: 33, name: "The Key", icon: "🔑", reading: "The essential solution unlocks the doorway. The missing piece was right in front of you." },
+      { id: 34, name: "The Fish", icon: "🐟", reading: "Flow of resources, commerce, and liquidity. Good business moves bring abundance." },
+      { id: 35, name: "The Anchor", icon: "⚓", reading: "Steadfast stability and reliable docking. Calm waters after a turbulent week." },
+      { id: 36, name: "The Cross", icon: "✝️", reading: "A necessary test of endurance and resilience. You're carrying it well; dawn is near." }
+    ];
+
+    /* ==========================================================================
+       APP STATE & GAMIFICATION SYSTEM
+       ========================================================================== */
+    const state = {
+      xp: 50,
+      soundEnabled: true,
+      audioCtx: null,
+      visitedCheckpoints: new Set(),
+      unlockedShoe: false,
+      drewThreeCards: false,
+      reachedEnd: false
+    };
+
+    /* Web Audio 8-bit sound effects generator */
+    function playSound(type) {
+      if (!state.soundEnabled) return;
+      try {
+        if (!state.audioCtx) {
+          state.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (state.audioCtx.state === 'suspended') {
+          state.audioCtx.resume();
+        }
+        const ctx = state.audioCtx;
+        const now = ctx.currentTime;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        if (type === 'coin') {
+          // Mario-style coin chime
+          osc.type = 'square';
+          osc.frequency.setValueAtTime(987.77, now); // B5
+          osc.frequency.setValueAtTime(1318.51, now + 0.08); // E6
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+          osc.start(now);
+          osc.stop(now + 0.35);
+        } else if (type === 'card') {
+          // Card swish / flip
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(300, now);
+          osc.frequency.exponentialRampToValueAtTime(650, now + 0.12);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+          osc.start(now);
+          osc.stop(now + 0.15);
+        } else if (type === 'fanfare') {
+          // Level clear short arpeggio
+          osc.type = 'square';
+          osc.frequency.setValueAtTime(523.25, now); // C5
+          osc.frequency.setValueAtTime(659.25, now + 0.08); // E5
+          osc.frequency.setValueAtTime(783.99, now + 0.16); // G5
+          osc.frequency.setValueAtTime(1046.50, now + 0.24); // C6
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+          osc.start(now);
+          osc.stop(now + 0.5);
+        } else if (type === 'click') {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(400, now);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+          osc.start(now);
+          osc.stop(now + 0.05);
+        }
+      } catch (e) {
+        // Audio context may fail on untrusted user interaction; fail silently
+      }
+    }
+
+    /* Floating XP Notification */
+    function awardXP(amount, reason) {
+      state.xp += amount;
+      document.getElementById('xpScoreDisplay').textContent = `${state.xp} XP`;
+      playSound('coin');
+
+      const container = document.getElementById('xpToastContainer');
+      const toast = document.createElement('div');
+      toast.className = 'xp-toast';
+      toast.innerHTML = `<span>⭐ +${amount} XP</span> <span>${reason}</span>`;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        if (toast.parentNode) toast.parentNode.removeChild(toast);
+      }, 2100);
+    }
+
+    /* ==========================================================================
+       SCROLL PROGRESS & CHECKPOINT TRACKER
+       ========================================================================== */
+    function updateScrollHUD() {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+
+      const progressBar = document.getElementById('scrollProgressBar');
+      if (progressBar) {
+        progressBar.style.width = scrolled + '%';
+      }
+
+      // Checkpoints monitoring (7 main checkpoints)
+      const sections = document.querySelectorAll('section[data-checkpoint-index]');
+      let currentCheckpointIndex = 0;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.45) {
+          const index = parseInt(section.getAttribute('data-checkpoint-index'), 10);
+          if (index > currentCheckpointIndex) {
+            currentCheckpointIndex = index;
+          }
+        }
+      });
+
+      const checkpointBadge = document.getElementById('checkpointCounter');
+      if (checkpointBadge) {
+        checkpointBadge.textContent = `CHECKPOINTS ${currentCheckpointIndex}/7`;
+      }
+
+      // Award XP for newly discovered checkpoints
+      if (currentCheckpointIndex > 0 && !state.visitedCheckpoints.has(currentCheckpointIndex)) {
+        state.visitedCheckpoints.add(currentCheckpointIndex);
+        awardXP(10, `Checkpoint 0${currentCheckpointIndex} Cleared!`);
+      }
+
+      // Final Level Check
+      if (currentCheckpointIndex === 7 && !state.reachedEnd) {
+        state.reachedEnd = true;
+        document.getElementById('achieveEnd').classList.add('unlocked');
+      }
+    }
+
+    window.addEventListener('scroll', updateScrollHUD, { passive: true });
+    window.addEventListener('resize', updateScrollHUD);
+
+    /* ==========================================================================
+       IDLE TIMER FOR START SCREEN EASTER EGG ("psst… press start.")
+       ========================================================================== */
+    let idleTimer = null;
+    function resetIdleTimer() {
+      const bubble = document.getElementById('idleBubble');
+      if (bubble) bubble.classList.remove('visible');
+
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => {
+        const scrollPos = window.scrollY || document.documentElement.scrollTop;
+        if (scrollPos < 200) {
+          if (bubble) bubble.classList.add('visible');
+        }
+      }, 10000); // 10s idle trigger
+    }
+
+    ['mousemove', 'keydown', 'scroll', 'touchstart'].forEach(evt => {
+      window.addEventListener(evt, resetIdleTimer, { passive: true });
+    });
+    resetIdleTimer();
+
+    /* ==========================================================================
+       HERO WORD CYCLING (data → ideas → intuition)
+       ========================================================================== */
+    function initWordCycle() {
+      const words = document.querySelectorAll('.cycle-word');
+      if (!words.length) return;
+      let currentIndex = 0;
+
+      setInterval(() => {
+        words[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % words.length;
+        words[currentIndex].classList.add('active');
+      }, 2200);
+    }
+
+    /* ==========================================================================
+       LENORMAND CARDS INTERACTION
+       ========================================================================== */
+    function getRandomCards(count) {
+      const shuffled = [...LENORMAND_DECK].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, count);
+    }
+
+    function renderCardFace(card, roleLabel) {
+      return `
+        <div class="tarot-card-slot">
+          <div class="tarot-card-inner flipped">
+            <div class="card-face card-back-pattern">
+              <span class="card-back-icon">🔮</span>
+              <span style="font-family: var(--font-arcade); font-size: 0.58rem;">LENORMAND</span>
+            </div>
+            <div class="card-face card-front-display">
+              <span class="card-number-badge">NO. ${card.id}</span>
+              <div class="card-illustration-box">${card.icon}</div>
+              <div class="card-heading-name">${card.name}</div>
+              <span class="spread-slot-label">${roleLabel}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function drawLenormand(mode) {
+      playSound('card');
+      const arena = document.getElementById('cardsSpreadArena');
+      const readingOutput = document.getElementById('cardReadingOutput');
+      const userQ = document.getElementById('lenormandQuestionInput').value.trim();
+
+      if (mode === 1) {
+        // 1 Card Draw
+        const card = getRandomCards(1)[0];
+        arena.innerHTML = renderCardFace(card, "ORACLE");
+        
+        let prefix = userQ ? `<strong>In response to: "${userQ}"</strong><br>` : '';
+        readingOutput.innerHTML = `${prefix}<strong>${card.name}:</strong> "${card.reading}"`;
+        awardXP(10, `Drew ${card.name}!`);
+      } else {
+        // 3-Card Spread (Past · Present · Next Quest)
+        const cards = getRandomCards(3);
+        const roles = ["PAST", "PRESENT", "NEXT QUEST"];
+
+        arena.innerHTML = cards.map((c, i) => renderCardFace(c, roles[i])).join('');
+
+        let prefix = userQ ? `<strong>Inquiry: "${userQ}"</strong><br>` : '';
+        readingOutput.innerHTML = `
+          ${prefix}
+          <div><strong>1. Past (${cards[0].name}):</strong> ${cards[0].reading}</div>
+          <div style="margin: 6px 0;"><strong>2. Present (${cards[1].name}):</strong> ${cards[1].reading}</div>
+          <div><strong>3. Next Quest (${cards[2].name}):</strong> ${cards[2].reading}</div>
+        `;
+
+        if (!state.drewThreeCards) {
+          state.drewThreeCards = true;
+          document.getElementById('achieveCards').classList.add('unlocked');
+          awardXP(30, "Master of 3-Card Spread!");
+        } else {
+          awardXP(15, "Fresh 3-Card Reading");
+        }
+      }
+    }
+
+    /* ==========================================================================
+       EASTER EGGS: SNEAKER STICKER & JOGGING RUNNER
+       ========================================================================== */
+    function openShoeModal() {
+      playSound('fanfare');
+      document.getElementById('shoeModal').classList.add('open');
+    }
+
+    function closeShoeModal() {
+      playSound('click');
+      document.getElementById('shoeModal').classList.remove('open');
+    }
+
+    function triggerShoeEasterEgg() {
+      if (!state.unlockedShoe) {
+        state.unlockedShoe = true;
+        document.getElementById('achieveShoe').classList.add('unlocked');
+        awardXP(50, "Discovered Sneaker Easter Egg!");
+      }
+      openShoeModal();
+    }
+
+    function triggerRunner() {
+      const runner = document.getElementById('pixelRunnerSprite');
+      if (!runner) return;
+      runner.classList.remove('running');
+      // trigger reflow
+      void runner.offsetWidth;
+      runner.classList.add('running');
+    }
+
+    // Runner triggers periodically every 45 seconds
+    setInterval(triggerRunner, 45000);
+    // Also trigger on pressing 'J' (Jog) or clicking runner track
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'j' || e.key === 'J') {
+        triggerRunner();
+      }
+    });
+
+    const runnerTrack = document.querySelector('.runner-stage-track');
+    if (runnerTrack) {
+      runnerTrack.style.pointerEvents = 'auto';
+      runnerTrack.style.cursor = 'pointer';
+      runnerTrack.title = "Click to jog or press 'J'!";
+      runnerTrack.addEventListener('click', triggerRunner);
+    }
+
+    /* ==========================================================================
+       THEME & AUDIO CONTROLS
+       ========================================================================== */
+    function toggleTheme() {
+      playSound('click');
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        document.getElementById('themeIcon').textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('themeIcon').textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    function toggleAudio() {
+      state.soundEnabled = !state.soundEnabled;
+      document.getElementById('audioIcon').textContent = state.soundEnabled ? '🔊' : '🔇';
+      if (state.soundEnabled) playSound('coin');
+    }
+
+    /* ==========================================================================
+       INTERACTIVE CV MODAL & CONTACT FORM
+       ========================================================================== */
+    function openCvModal() {
+      playSound('click');
+      document.getElementById('cvModal').classList.add('open');
+    }
+
+    function closeCvModal() {
+      playSound('click');
+      document.getElementById('cvModal').classList.remove('open');
+    }
+
+    function handleQuickDispatch(e) {
+      e.preventDefault();
+      const name = document.getElementById('senderName').value;
+      const email = document.getElementById('senderEmail').value;
+      const msg = document.getElementById('senderMessage').value;
+
+      playSound('fanfare');
+      awardXP(20, "Dispatch Prepared!");
+
+      const subject = encodeURIComponent(`Inquiry from ${name} via PLAY MY WORLD Portfolio`);
+      const body = encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${msg}`);
+      window.location.href = `mailto:quanghuy362006@gmail.com?subject=${subject}&body=${body}`;
+
+      alert(`Thank you, ${name}! Your email client will open to transmit this dispatch directly to Quang Huy.`);
+    }
+
+    function copyEmailToClipboard() {
+      navigator.clipboard.writeText('quanghuy362006@gmail.com').then(() => {
+        playSound('coin');
+        awardXP(10, "Email copied to clipboard!");
+        alert("Copied quanghuy362006@gmail.com to clipboard! Ready to paste.");
+      }).catch(() => {
+        prompt("Copy email address:", "quanghuy362006@gmail.com");
+      });
+    }
+
+    /* ==========================================================================
+       DOM READY INITIALIZATION
+       ========================================================================== */
+    document.addEventListener('DOMContentLoaded', () => {
+      // Restore theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        const icon = document.getElementById('themeIcon');
+        if (icon) icon.textContent = '☀️';
+      }
+
+      // Initialize word cycler
+      initWordCycle();
+
+      // Theme toggle button
+      document.getElementById('themeToggleBtn').addEventListener('click', toggleTheme);
+
+      // Audio toggle button
+      document.getElementById('audioToggleBtn').addEventListener('click', toggleAudio);
+
+      // Mobile Menu Drawer
+      const mobileBtn = document.getElementById('mobileMenuToggle');
+      const mobileDrawer = document.getElementById('mobileNavDrawer');
+      if (mobileBtn && mobileDrawer) {
+        mobileBtn.addEventListener('click', () => {
+          mobileDrawer.classList.toggle('open');
+        });
+        document.querySelectorAll('.mobile-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileDrawer.classList.remove('open');
+          });
+        });
+      }
+
+      // CV Modal bindings
+      document.getElementById('viewCvBtn').addEventListener('click', openCvModal);
+      document.getElementById('cvModalCloseBtn').addEventListener('click', closeCvModal);
+      document.getElementById('cvModal').addEventListener('click', (e) => {
+        if (e.target.id === 'cvModal') closeCvModal();
+      });
+
+      // Recruiter copy button
+      const copyBtn = document.getElementById('copyEmailBtn');
+      if (copyBtn) copyBtn.addEventListener('click', copyEmailToClipboard);
+
+      // Lenormand buttons
+      document.getElementById('drawOneCardBtn').addEventListener('click', () => drawLenormand(1));
+      document.getElementById('drawThreeCardBtn').addEventListener('click', () => drawLenormand(3));
+
+      // Shoe Easter Egg & Modal bindings
+      document.getElementById('shoeEasterEggBtn').addEventListener('click', triggerShoeEasterEgg);
+      document.getElementById('shoeModalCloseBtn').addEventListener('click', closeShoeModal);
+      document.getElementById('shoeModalOkBtn').addEventListener('click', closeShoeModal);
+      document.getElementById('shoeModal').addEventListener('click', (e) => {
+        if (e.target.id === 'shoeModal') closeShoeModal();
+      });
+
+      // Reveal on Scroll observer
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section-wrapper, .quest-card, .inventory-card, .scatter-polaroid, .knowledge-card, .rpg-stat-panel, .polaroid-frame').forEach(el => {
+          el.classList.add('reveal-item');
+          revealObserver.observe(el);
+        });
+      }
+
+      // 3D Card Tilt (4-8 deg) respecting prefers-reduced-motion
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('.inventory-card, .knowledge-card, .boss-card, .recruiter-summary-box').forEach(card => {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            const rotX = Math.max(-6, Math.min(6, -y / 18));
+            const rotY = Math.max(-6, Math.min(6, x / 18));
+            card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-4px)`;
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+          });
+        });
+      }
+
+      // Play Again Button (Scroll to Top with celebration)
+      document.getElementById('playAgainBtn').addEventListener('click', () => {
+        playSound('fanfare');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        awardXP(20, "New Game + Started!");
+        setTimeout(triggerRunner, 600);
+      });
+
+      // Personality cards click to flip (touch friendly)
+      document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('click', () => {
+          card.classList.toggle('flipped');
+          playSound('click');
+        });
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            card.classList.toggle('flipped');
+            playSound('click');
+          }
+        });
+      });
+
+      // Press Start sound
+      const startBtn = document.getElementById('pressStartBtn');
+      if (startBtn) {
+        startBtn.addEventListener('click', () => {
+          playSound('coin');
+          awardXP(10, "Quest Initiated!");
+        });
+      }
+
+      // Initial scroll HUD check
+      updateScrollHUD();
+    });
+  </script>
+</body>
+</html>
